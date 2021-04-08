@@ -1,660 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Landing page</title>
+        <title>Landing page</title>
 
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Open+Sans" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Open+Sans&family=Architects+Daughter"
+            rel="stylesheet"
+        >
 
-    <style>
-        h1,h2,h3,h4,h5,h6 {
-            font-family: 'Ubuntu', sans-serif;
-        }
+        <style>
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Ubuntu', sans-serif;
+            }
 
-        * {
-            font-family: 'Open Sans', serif;
-        }
-    </style>
-</head>
-<body>
-    <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl" style="max-width: 1170px;">
-        <header class="py-10">
-            <div class="relative flex items-center justify-between">
-                <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-                    <img src="https://i.imgur.com/WlwgpDn.png" style="height: 40px;" alt="">
-                </a>
-                <ul class="flex items-center space-x-8">
-                    <li>
-                        <a
-                            href="/" aria-label="Our product" title="Our product"
-                            class="font-normal tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500"
-                        >
-                            About us
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/" aria-label="Our product" title="Our product"
-                            class="font-normal tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500"
-                        >
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/" aria-label="Product pricing" title="Product pricing"
-                            class="font-normal tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500"
-                        >
-                            Our work
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/" aria-label="Product pricing" title="Product pricing"
-                            class="font-normal tracking-wide text-gray-600 transition-colors duration-200 hover:text-red-500"
-                        >
-                            Contact us
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <section class="py-16 flex justify-between">
-            <div
-                class="flex flex-col justify-center md:items-start mb-16 md:mb-0 pr-10 w-1/2"
-            >
-                <h1 class="leading-tight text-5xl font-bold text-gray-900 mb-7">
-                    Full-cycle software development company
-                </h1>
-                <p class="mb-4 text-gray-500 mb-7 w-11/12">
-                    Innovative web applications tailor-made for your specific online business requirements.
-                    From Bijeljina, Bosnia & Herzegovina.
-                </p>
-                <a
-                    href="/"
-                    class="py-3 px-12 font-bold tracking-wide shadow-lg text-white rounded-lg text-white bg-red-500"
-                    aria-label="Contact us"
-                    title="Contact us"
-                >
-                    Contact us
-                </a>
-            </div>
-            <div class="w-1/2 flex flex-col justify-center">
-                <img class="object-cover object-center rounded" alt="hero" src="img/hero.svg">
-            </div>
-        </section>
-        <section class="my-16">
-            <div class="grid gap-12 row-gap-5 grid-cols-3">
-                <div>
-                    <div class="flex items-center justify-center w-10 mx-auto h-10 mb-4 rounded-full bg-red-50">
-                        <svg class="w-8 h-8 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                    </div>
-                    <h6 class="mb-3 text-xl text-center">Reliable Agency Partner</h6>
-                    <p class="text-sm leading-relaxed text-gray-500 text-center">
-                        Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
-                    </p>
-                </div>
-                <div>
-                    <div class="flex items-center justify-center w-10 mx-auto h-10 mb-4 rounded-full bg-red-50">
-                        <svg class="w-8 h-8 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                    </div>
-                    <h6 class="mb-3 text-xl text-center">Technical Advisor</h6>
-                    <p class="text-sm leading-relaxed text-gray-500 text-center">
-                        Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
-                    </p>
-                </div>
-                <div>
-                    <div class="flex items-center justify-center w-10 mx-auto h-10 mb-4 rounded-full bg-red-50">
-                        <svg class="w-8 h-8 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                    </div>
-                    <h6 class="mb-3 text-xl text-center">Embedded Team</h6>
-                    <p class="text-sm leading-relaxed text-gray-500 text-center">
-                        We've written extensive documentation for components and tools, so you never have to reverse engineer anything.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="my-16">
-            <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
-                <div class="lg:py-6 lg:pr-16">
-                    <p class="uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Our process</p>
-                    <h2 class="tracking-wide text-3xl mb-10 font-bold text-gray-900">
-                        Development process
-                    </h2>
-                    <div class="flex">
-                        <div class="flex flex-col items-center mr-4">
-                            <div>
-                                <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                                    <svg class="w-4 text-red-500" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="w-px h-full bg-gray-300"></div>
-                        </div>
-                        <div class="pt-1 pb-8">
-                            <p class="mb-2 text-lg font-bold">Planning and design</p>
-                            <p class="text-gray-500 text-sm">
-                                All recipes are written using certain conventions, which define the characteristics of common ingredients. The rules vary from place to place.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="flex flex-col items-center mr-4">
-                            <div>
-                                <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                                    <svg class="w-4 text-red-500" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="w-px h-full bg-gray-300"></div>
-                        </div>
-                        <div class="pt-1 pb-8">
-                            <p class="mb-2 text-lg font-bold">Development</p>
-                            <p class="text-gray-500 text-sm">
-                                The first mate and his Skipper too will do their very best to make the others comfortable in their tropic island nest. Michael Knight a young loner.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="flex flex-col items-center mr-4">
-                            <div>
-                                <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                                    <svg class="w-4 text-red-500" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <line fill="none" stroke-miterlimit="10" x1="12" y1="2" x2="12" y2="22"></line>
-                                        <polyline fill="none" stroke-miterlimit="10" points="19,15 12,22 5,15"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="w-px h-full bg-gray-300"></div>
-                        </div>
-                        <div class="pt-1 pb-8">
-                            <p class="mb-2 text-lg font-bold">Testing</p>
-                            <p class="text-gray-500 text-sm">
-                                Tell them I hate them. Is the Space Pope reptilian!? Tell her she looks thin. Hello, little man. I will destroy you!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="flex flex-col items-center mr-4">
-                            <div>
-                                <div class="flex items-center justify-center w-10 h-10 border rounded-full">
-                                    <svg class="w-6 text-red-500" stroke="currentColor" viewBox="0 0 24 24">
-                                        <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6,12 10,16 18,8"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-1">
-                            <p class="mb-2 text-lg font-bold">Deliver the project</p>
-                            <p class="text-gray-500 text-sm"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img
-                        class="inset-0 object-cover object-bottom w-full rounded shadow-lg h-96 lg:absolute lg:h-full"
-                        src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt=""
-                    />
-                </div>
-            </div>
-        </section>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#EFF6FF" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,117.3C1120,96,1280,96,1360,96L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-    <div class="bg-blue-50">
+            * {
+                font-family: 'Open Sans', serif;
+            }
+
+            .heading {
+                font-family: 'Architects Daughter', serif;
+            }
+        </style>
+    </head>
+    <body>
         <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl" style="max-width: 1170px;">
-            <section>
-                <div class="mb-14">
-                    <p class="uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold text-center mb-2">Our services</p>
-                    <h2 class="tracking-wide text-3xl mb-4 font-bold text-gray-900 text-center">
-                        What we offer?
-                    </h2>
+            <header class="py-10">
+                <div class="relative flex items-center justify-between">
+                    <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                        <img src="https://i.imgur.com/WlwgpDn.png" style="height: 40px;" alt="">
+                    </a>
+                    <ul class="flex items-center space-x-8">
+                        <li>
+                            <a
+                                href="/" aria-label="Our product" title="Our product"
+                                class="font-normal tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500"
+                            >
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/" aria-label="Our product" title="Our product"
+                                class="font-normal tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500"
+                            >
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/" aria-label="Product pricing" title="Product pricing"
+                                class="font-normal tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500"
+                            >
+                                Our work
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/" aria-label="Product pricing" title="Product pricing"
+                                class="font-normal tracking-wide text-gray-600 transition-colors duration-200 hover:text-red-500"
+                            >
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="grid gap-8 row-gap-5 lg:grid-cols-4">
-
-                    <div
-                        class="p-7 overflow-hidden transition duration-300 transform border rounded-xl shadow-sm hover:scale-105 group hover:shadow-lg bg-white"
+            </header>
+            <section class="py-16 flex justify-between">
+                <div class="flex flex-col justify-center md:items-start mb-16 md:mb-0 pr-10 w-1/2">
+                    <h1 class="leading-tight text-5xl font-bold text-gray-900 mb-7">
+                        Full-cycle software development company
+                    </h1>
+                    <p class="mb-4 text-gray-500 mb-7 w-11/12">
+                        Innovative web applications tailor-made for your specific online business requirements.
+                        From Bijeljina, Bosnia & Herzegovina.
+                    </p>
+                    <a
+                        href="/"
+                        class="py-3 px-12 font-bold tracking-wide shadow-lg text-white rounded-lg text-white bg-red-500"
+                        aria-label="Contact us"
+                        title="Contact us"
                     >
-                        <h6 class="font-semibold tracking-wide text-lg mb-9">Web Development</h6>
-                        <svg width="60" height="60" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
-                                stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                        </svg>
-                        <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
-                        <p class="text-sm text-gray-500 leading-relaxed">
-                            Innovative web applications tailor-made for your specific online business requirements.
+                        Contact us
+                    </a>
+                </div>
+                <div class="w-1/2 flex flex-col justify-center">
+                    <img class="object-cover object-center rounded" alt="hero" src="img/hero.svg">
+                </div>
+            </section>
+            <section class="my-16">
+                <div class="grid gap-12 row-gap-5 grid-cols-3">
+                    <div>
+                        <div class="flex items-center justify-center w-10 mx-auto h-10 mb-4 rounded-full bg-red-50">
+                            <svg class="w-8 h-8 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
+                                <polygon
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    fill="none"
+                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                ></polygon>
+                            </svg>
+                        </div>
+                        <h6 class="mb-3 text-xl text-center">Reliable Agency Partner</h6>
+                        <p class="text-sm leading-relaxed text-gray-500 text-center">
+                            Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
                         </p>
                     </div>
-
-                    <div
-                        class="p-7 overflow-hidden transition duration-300 transform border rounded-xl shadow-sm hover:scale-105 group hover:shadow-lg bg-white"
-                    >
-                        <h6 class="font-semibold text-lg tracking-wide mb-9">Design</h6>
-                        <svg width="60" height="60" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
-                                stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                        </svg>
-                        <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
-                        <p class="text-sm text-gray-500 leading-relaxed">
-                            We deliver visually consistent, stunning designs to help you build a unique brand identity.
+                    <div>
+                        <div class="flex items-center justify-center w-10 mx-auto h-10 mb-4 rounded-full bg-red-50">
+                            <svg class="w-8 h-8 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
+                                <polygon
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    fill="none"
+                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                ></polygon>
+                            </svg>
+                        </div>
+                        <h6 class="mb-3 text-xl text-center">Technical Advisor</h6>
+                        <p class="text-sm leading-relaxed text-gray-500 text-center">
+                            Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
                         </p>
                     </div>
-
-                    <div
-                        class="p-7 overflow-hidden transition duration-300 transform border rounded-xl bg-white shadow-sm hover:scale-105 group hover:shadow-lg"
-                    >
-                        <h6 class="font-semibold text-lg tracking-wide mb-9">Hosting & Cloud</h6>
-                        <svg width="60" height="60" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
-                                stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                        </svg>
-                        <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
-                        <p class="text-sm text-gray-500 leading-relaxed">
-                            Customized, cost-effective virtual private server and dedicated server solutions from a highly secure data center.
+                    <div>
+                        <div class="flex items-center justify-center w-10 mx-auto h-10 mb-4 rounded-full bg-red-50">
+                            <svg class="w-8 h-8 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
+                                <polygon
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    fill="none"
+                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                                ></polygon>
+                            </svg>
+                        </div>
+                        <h6 class="mb-3 text-xl text-center">Embedded Team</h6>
+                        <p class="text-sm leading-relaxed text-gray-500 text-center">
+                            We've written extensive documentation for components and tools, so you never have to reverse engineer anything.
                         </p>
                     </div>
-
-                    <div
-                        class="p-7 overflow-hidden transition duration-300 transform border rounded-xl shadow-sm hover:scale-105 group hover:shadow-lg bg-white"
-                    >
-                        <h6 class="font-semibold text-lg tracking-wide mb-9">Support</h6>
-                        <svg width="60" height="60" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
-                                stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
-                                fill="currentColor"
-                            ></path>
-                            <path
-                                d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
-                                stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round"
-                            ></path>
-                        </svg>
-                        <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
-                        <p class="text-sm text-gray-500 leading-relaxed">
-                            Innovative web applications tailor-made for your specific online business requirements.
-                        </p>
-                    </div>
-
                 </div>
             </section>
         </div>
-    </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#EFF6FF" fill-opacity="1" d="M0,32L80,69.3C160,107,320,181,480,192C640,203,800,149,960,133.3C1120,117,1280,139,1360,149.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-
-    <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl" style="max-width: 1170px;">
-        <section class="mb-16">
-            <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
-                <div class="flex flex-col justify-center">
-                    <div class="max-w-xl mb-6">
-                        <p class="uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Who we are</p>
-                        <h2 class="max-w-lg mb-8 text-3xl font-bold text-gray-900">
-                                The quick, brown fox jumps over a lazy dog
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+            <path
+                fill="#EFF6FF"
+                fill-opacity="1"
+                d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,117.3C1120,96,1280,96,1360,96L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+        </svg>
+        <div class="bg-blue-50">
+            <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl" style="max-width: 1170px;">
+                <section>
+                    <div class="mb-14">
+                        <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold text-center mb-2">Our services</p>
+                        <h2 class="tracking-wide text-3xl mb-4 font-bold text-gray-900 text-center">
+                            What we offer?
                         </h2>
-                        <p class="text-gray-500">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
-                        </p>
                     </div>
-                    <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex">
-                                <span class="mr-2 text-red-500">
-                                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </span>
-                                A slice of heaven
-                            </li>
-                            <li class="flex">
-                                <span class="mr-2 text-red-500">
-                                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </span>
-                                Disrupt inspire
-                            </li>
-                            <li class="flex">
-                                <span class="mr-2 text-red-500">
-                                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </span>
-                                Preliminary thinking
-                            </li>
-                        </ul>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex">
-                                <span class="mr-2 text-red-500">
-                                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </span>
-                                Flipboard curmudgeon
-                            </li>
-                            <li class="flex">
-                                <span class="mr-2 text-red-500">
-                                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </span>
-                                Storage shed
-                            </li>
-                            <li class="flex">
-                                <span class="mr-2 text-red-500">
-                                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </span>
-                                Satoshi Nakamoto
-                            </li>
-                        </ul>
+                    <div class="grid gap-8 row-gap-5 lg:grid-cols-4">
+
+                        <div
+                            class="p-7 overflow-hidden transition duration-300 transform border rounded-xl shadow-sm hover:scale-105 group hover:shadow-lg bg-white"
+                        >
+                            <h6 class="font-semibold tracking-wide text-lg mb-9">Web Development</h6>
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 52 52"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
+                                    stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                            <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
+                            <p class="text-sm text-gray-500 leading-relaxed">
+                                Innovative web applications tailor-made for your specific online business requirements.
+                            </p>
+                        </div>
+
+                        <div
+                            class="p-7 overflow-hidden transition duration-300 transform border rounded-xl shadow-sm hover:scale-105 group hover:shadow-lg bg-white"
+                        >
+                            <h6 class="font-semibold text-lg tracking-wide mb-9">Design</h6>
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 52 52"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
+                                    stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                            <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
+                            <p class="text-sm text-gray-500 leading-relaxed">
+                                We deliver visually consistent, stunning designs to help you build a unique brand identity.
+                            </p>
+                        </div>
+
+                        <div
+                            class="p-7 overflow-hidden transition duration-300 transform border rounded-xl bg-white shadow-sm hover:scale-105 group hover:shadow-lg"
+                        >
+                            <h6 class="font-semibold text-lg tracking-wide mb-9">Hosting & Cloud</h6>
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 52 52"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
+                                    stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                            <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
+                            <p class="text-sm text-gray-500 leading-relaxed">
+                                Customized, cost-effective virtual private server and dedicated server solutions from a highly secure data center.
+                            </p>
+                        </div>
+
+                        <div
+                            class="p-7 overflow-hidden transition duration-300 transform border rounded-xl shadow-sm hover:scale-105 group hover:shadow-lg bg-white"
+                        >
+                            <h6 class="font-semibold text-lg tracking-wide mb-9">Support</h6>
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 52 52"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.9796 36.4936H23.2234C23.5785 36.4936 23.9927 36.3743 24.2886 36.1953"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.2679V5.41432V3.08785C25.2947 1.89479 24.3479 1 23.2235 1H3.10297C1.97859 1 1.03174 1.95445 1.03174 3.08785V5.41432V32.0792V34.4056C1.03174 35.5391 1.97859 36.4935 3.10297 36.4935H8.31063"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M25.2947 20.268V5.41443H1.03174V32.0793H19.2586" stroke="currentColor"
+                                    stroke-width="1.19306" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M3.3988 13.8254C3.3988 13.4675 3.69469 13.2289 3.99058 13.2289H17.0689C17.424 13.2289 17.6607 13.5271 17.6607 13.8254C17.6607 14.1833 17.3648 14.4219 17.0689 14.4219H3.99058C3.69469 14.4219 3.3988 14.1237 3.3988 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8683 13.8254C22.8683 14.1833 22.5724 14.4219 22.2765 14.4219H20.7379C20.3828 14.4219 20.1461 14.1236 20.1461 13.8254C20.1461 13.4674 20.442 13.2288 20.7379 13.2288H22.2765C22.6316 13.1692 22.8683 13.4674 22.8683 13.8254Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M18.43 28.0228H3.99058C3.63552 28.0228 3.3988 28.2614 3.3988 28.6194C3.3988 28.9773 3.69469 29.2159 3.99058 29.2159H18.1933C18.2525 28.858 18.3117 28.4404 18.43 28.0228Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 18.7766C3.3988 18.4187 3.69469 18.1801 3.99058 18.1801H6.23935C6.59442 18.1801 6.83113 18.4783 6.83113 18.7766C6.83113 19.1345 6.53524 19.3731 6.23935 19.3731H3.99058C3.69469 19.3731 3.3988 19.0748 3.3988 18.7766Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 8.87424C3.3988 8.51632 3.69469 8.27771 3.99058 8.27771H7.12702C7.48208 8.27771 7.7188 8.57597 7.7188 8.87424C7.7188 9.1725 7.42291 9.47077 7.12702 9.47077H4.04976C3.69469 9.47077 3.3988 9.1725 3.3988 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M10.5001 8.87424C10.5001 8.51632 10.796 8.27771 11.0919 8.27771H22.2765C22.6316 8.27771 22.8683 8.57597 22.8683 8.87424C22.8683 9.1725 22.5724 9.47077 22.2765 9.47077H11.0919C10.7368 9.47077 10.5001 9.1725 10.5001 8.87424Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M3.3988 23.7278C3.3988 23.3698 3.69469 23.1312 3.99058 23.1312H15.6486C16.0037 23.1312 16.2404 23.4295 16.2404 23.7278C16.2404 24.0857 15.9445 24.3243 15.6486 24.3243H3.99058C3.69469 24.3243 3.3988 24.026 3.3988 23.7278Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M22.8684 18.7767C22.8684 19.1346 22.5725 19.3732 22.2766 19.3732H9.55333C9.19826 19.3732 8.96155 19.0749 8.96155 18.7767C8.96155 18.4187 9.25744 18.1801 9.55333 18.1801H22.2766C22.6317 18.1205 22.8684 18.4187 22.8684 18.7767Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M13.1633 35.3004C13.7189 35.3004 14.1693 34.8464 14.1693 34.2863C14.1693 33.7262 13.7189 33.2722 13.1633 33.2722C12.6076 33.2722 12.1572 33.7262 12.1572 34.2863C12.1572 34.8464 12.6076 35.3004 13.1633 35.3004Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M17.1873 3.20725C17.1873 3.56516 16.8914 3.80378 16.5955 3.80378H12.9265C12.5714 3.80378 12.3347 3.50551 12.3347 3.20725C12.3347 2.84933 12.6306 2.61072 12.9265 2.61072H16.5955C16.8914 2.61072 17.1873 2.84933 17.1873 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M11.0919 3.20725C11.0919 3.56516 10.796 3.80378 10.5002 3.80378H9.79002C9.43495 3.80378 9.19824 3.50551 9.19824 3.20725C9.19824 2.84933 9.49413 2.61072 9.79002 2.61072H10.5002C10.796 2.61072 11.0919 2.84933 11.0919 3.20725Z"
+                                    fill="currentColor"
+                                ></path>
+                                <path
+                                    d="M26.4782 36.5532C30.9558 36.5532 34.5856 32.8942 34.5856 28.3807C34.5856 23.8672 30.9558 20.2083 26.4782 20.2083C22.0006 20.2083 18.3708 23.8672 18.3708 28.3807C18.3708 32.8942 22.0006 36.5532 26.4782 36.5532Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M24.7029 24.7418C24.9988 24.6225 25.2947 24.5032 25.5906 24.4435C25.6497 24.4435 25.7681 24.3839 25.7681 24.2646L26.064 23.4891C26.1232 23.3101 26.2415 23.2505 26.3599 23.2505L27.1292 23.3101C27.2475 23.3101 27.3067 23.3698 27.3659 23.4891L27.6026 24.3839C27.6026 24.4435 27.6618 24.5629 27.7801 24.5629C28.076 24.6822 28.3719 24.8015 28.6086 24.9804C28.6678 25.0401 28.7862 25.0401 28.8453 24.9804L29.6738 24.6225C29.7922 24.5629 29.9105 24.6225 29.9697 24.6822L30.5023 25.2787C30.5615 25.3383 30.5615 25.5173 30.5023 25.577L30.0289 26.3524C29.9697 26.4121 29.9697 26.5314 30.0289 26.5911C30.1473 26.8893 30.3248 27.1279 30.3248 27.4262C30.3248 27.5455 30.384 27.6052 30.5023 27.6648L31.2716 27.9631C31.4492 28.0227 31.5084 28.142 31.5084 28.2613L31.4492 29.0368C31.4492 29.1561 31.39 29.2158 31.2716 29.2754L30.384 29.514C30.3248 29.514 30.2064 29.5737 30.2064 29.693C30.0881 29.9913 29.9697 30.2895 29.7922 30.5281C29.733 30.5878 29.733 30.7071 29.7922 30.7668L30.2656 31.7809L29.3779 32.5563L28.4311 32.0195C28.3719 31.9598 28.2536 31.9598 28.1944 32.0195C27.8985 32.1388 27.6026 32.2581 27.3067 32.3177C27.2475 32.3177 27.1292 32.3774 27.1292 32.4967L26.8333 33.2125C26.7741 33.3915 26.6558 33.4511 26.5374 33.4511L25.7681 33.3915C25.6497 33.3915 25.5906 33.3318 25.5314 33.2125L25.2947 32.3177C25.2947 32.2581 25.2355 32.1388 25.1171 32.1388C24.8212 32.0195 24.5254 31.9002 24.2886 31.7212C24.2295 31.6616 24.1111 31.6616 24.0519 31.7212L23.2234 32.0791C23.1051 32.1388 22.9867 32.0791 22.9275 32.0195L22.3949 31.4229C22.3358 31.3633 22.3358 31.1843 22.3949 31.1247L22.8684 30.3492C22.9275 30.2895 22.9275 30.1702 22.8684 30.1106C22.75 29.8123 22.6317 29.514 22.5725 29.2158C22.5725 29.1561 22.5133 29.0368 22.3949 29.0368L21.6256 28.7386C21.4481 28.6789 21.3889 28.5596 21.3889 28.4403L21.4481 27.6648C21.4481 27.5455 21.5073 27.4858 21.6256 27.4262L22.5133 27.1876C22.5725 27.1876 22.6908 27.1279 22.6908 27.0086C22.8092 26.7104 22.9275 26.4121 23.1051 26.1735C23.1643 26.1138 23.1643 25.9945 23.1051 25.9349L22.75 25.1594C22.6908 24.9804 22.6908 24.8611 22.8092 24.8015L23.401 24.2646C23.4601 24.2049 23.6377 24.2049 23.6969 24.2646L24.407 24.6822C24.5254 24.7418 24.6437 24.7418 24.7029 24.7418Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M27.7825 29.832C28.5903 29.1116 28.6656 27.8674 27.9509 27.0532C27.2361 26.239 26.0019 26.1631 25.1942 26.8836C24.3865 27.604 24.3111 28.8482 25.0259 29.6624C25.7406 30.4766 26.9748 30.5525 27.7825 29.832Z"
+                                    stroke="currentColor" stroke-width="1.19306" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                            <div class="w-10 rounded bg-red-500 mt-3 mb-6" style="padding-bottom: 1px;"></div>
+                            <p class="text-sm text-gray-500 leading-relaxed">
+                                Innovative web applications tailor-made for your specific online business requirements.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+                fill="#EFF6FF"
+                fill-opacity="1"
+                d="M0,32L80,69.3C160,107,320,181,480,192C640,203,800,149,960,133.3C1120,117,1280,139,1360,149.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+            ></path>
+        </svg>
+
+        <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl" style="max-width: 1170px;">
+            <section class="mb-16">
+                <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
+                    <div class="flex flex-col justify-center">
+                        <div class="max-w-xl mb-6">
+                            <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Who we are</p>
+                            <h2 class="max-w-lg mb-8 text-3xl font-bold text-gray-900">
+                                The quick, brown fox jumps over a lazy dog
+                            </h2>
+                            <p class="text-gray-500">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                            </p>
+                        </div>
+                        <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex">
+                                    <span class="mr-2 text-red-500">
+                                        <svg
+                                            width="10"
+                                            height="10"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </span>
+                                    A slice of heaven
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-2 text-red-500">
+                                        <svg
+                                            width="10"
+                                            height="10"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </span>
+                                    Disrupt inspire
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-2 text-red-500">
+                                        <svg
+                                            width="10"
+                                            height="10"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </span>
+                                    Preliminary thinking
+                                </li>
+                            </ul>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex">
+                                    <span class="mr-2 text-red-500">
+                                        <svg
+                                            width="10"
+                                            height="10"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </span>
+                                    Flipboard curmudgeon
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-2 text-red-500">
+                                        <svg
+                                            width="10"
+                                            height="10"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </span>
+                                    Storage shed
+                                </li>
+                                <li class="flex">
+                                    <span class="mr-2 text-red-500">
+                                        <svg
+                                            width="10"
+                                            height="10"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </span>
+                                    Satoshi Nakamoto
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img
+                            class="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                            src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                            alt=""
+                        />
                     </div>
                 </div>
-                <div>
-                    <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="" />
+            </section>
+            <section class="my-32">
+                <div class="mb-24 max-w-2xl mx-auto">
+                    <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Technology</p>
+                    <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">Our main technology stack</h2>
+                    <p class="text-gray-500 text-center">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                    </p>
                 </div>
-            </div>
-        </section>
-        <section class="my-32">
-            <div class="mb-24 max-w-2xl mx-auto">
-                <p class="uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Technology</p>
-                <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">Our main technology stack</h2>
-            </div>
                 <div class="grid gap-8 row-gap-12 lg:grid-cols-2">
                     <div class="max-w-md sm:mx-auto sm:text-center">
                         <img
@@ -679,148 +734,357 @@
                         </p>
                     </div>
                 </div>
-        </section>
-    </div>
-    <div class="bg-gray-100">
-        <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl" style="max-width: 1170px;">
-            <section class="py-20">
-                <div class="mb-24 max-w-2xl mx-auto">
-                    <span class="block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Our projects</span>
-                    <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">The Websites We Have Created</h2>
-                    <p class="text-gray-500 text-center text-sm">We are proud of what we do. We pour our blood, sweat, and tears into every ounce of the web design and web development work we do. From our cozy nook in Bijeljina, Bosnia and Herzegovina, we are building the internet of tomorrow.</p>
-                </div>
-                <div class="grid gap-8 lg:grid-cols-3">
-                    <div class="">
-                        <img
-                            class="shadow-lg rounded-xl"
-                            src="https://i.imgur.com/rk2qMPs.png"
-                            alt=""
-                        >
-                        <h6 class="text-center mt-6">Ordinacije.me</h6>
+            </section>
+            <section class="my-32">
+                <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
+                    <div class="lg:py-6 lg:pr-16">
+                        <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Our process</p>
+                        <h2 class="tracking-wide text-3xl mb-10 font-bold text-gray-900">
+                            Development process
+                        </h2>
+                        <div class="flex">
+                            <div class="flex flex-col items-center mr-4">
+                                <div>
+                                    <div class="flex items-center justify-center w-10 h-10 border rounded-full">
+                                        <svg
+                                            class="w-4 text-red-500"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <line
+                                                fill="none"
+                                                stroke-miterlimit="10"
+                                                x1="12"
+                                                y1="2"
+                                                x2="12"
+                                                y2="22"
+                                            ></line>
+                                            <polyline
+                                                fill="none"
+                                                stroke-miterlimit="10"
+                                                points="19,15 12,22 5,15"
+                                            ></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-px h-full bg-gray-300"></div>
+                            </div>
+                            <div class="pt-1 pb-8">
+                                <p class="mb-2 text-lg font-bold">Planning and design</p>
+                                <p class="text-gray-500 text-sm">
+                                    All recipes are written using certain conventions, which define the characteristics of common ingredients. The rules vary from place to place.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex flex-col items-center mr-4">
+                                <div>
+                                    <div class="flex items-center justify-center w-10 h-10 border rounded-full">
+                                        <svg
+                                            class="w-4 text-red-500"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <line
+                                                fill="none"
+                                                stroke-miterlimit="10"
+                                                x1="12"
+                                                y1="2"
+                                                x2="12"
+                                                y2="22"
+                                            ></line>
+                                            <polyline
+                                                fill="none"
+                                                stroke-miterlimit="10"
+                                                points="19,15 12,22 5,15"
+                                            ></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-px h-full bg-gray-300"></div>
+                            </div>
+                            <div class="pt-1 pb-8">
+                                <p class="mb-2 text-lg font-bold">Development</p>
+                                <p class="text-gray-500 text-sm">
+                                    The first mate and his Skipper too will do their very best to make the others comfortable in their tropic island nest. Michael Knight a young loner.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex flex-col items-center mr-4">
+                                <div>
+                                    <div class="flex items-center justify-center w-10 h-10 border rounded-full">
+                                        <svg
+                                            class="w-4 text-red-500"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <line
+                                                fill="none"
+                                                stroke-miterlimit="10"
+                                                x1="12"
+                                                y1="2"
+                                                x2="12"
+                                                y2="22"
+                                            ></line>
+                                            <polyline
+                                                fill="none"
+                                                stroke-miterlimit="10"
+                                                points="19,15 12,22 5,15"
+                                            ></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-px h-full bg-gray-300"></div>
+                            </div>
+                            <div class="pt-1 pb-8">
+                                <p class="mb-2 text-lg font-bold">Testing</p>
+                                <p class="text-gray-500 text-sm">
+                                    Tell them I hate them. Is the Space Pope reptilian!? Tell her she looks thin. Hello, little man. I will destroy you!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex flex-col items-center mr-4">
+                                <div>
+                                    <div class="flex items-center justify-center w-10 h-10 border rounded-full">
+                                        <svg class="w-6 text-red-500" stroke="currentColor" viewBox="0 0 24 24">
+                                            <polyline
+                                                fill="none"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-miterlimit="10"
+                                                points="6,12 10,16 18,8"
+                                            ></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-1">
+                                <p class="mb-2 text-lg font-bold">Deliver the project</p>
+                                <p class="text-gray-500 text-sm"></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="">
+                    <div class="relative">
                         <img
-                            class="shadow-lg rounded-xl"
-                            src="https://i.imgur.com/f1O2nmj.png"
+                            class="inset-0 object-cover object-bottom w-full rounded shadow-lg h-96 lg:absolute lg:h-full"
+                            src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
-                        >
-                        <h6 class="text-center mt-6">Apoteke.me</h6>
-                    </div>
-                    <div class="">
-                        <img
-                            class="shadow-lg rounded-xl"
-                            src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
-                            alt=""
-                        >
-                        <h6 class="text-center mt-6">Pedigres</h6>
-                    </div>
-                    <div class="">
-                        <img
-                            class="shadow-lg rounded-xl"
-                            src="https://i.imgur.com/QQVCyHP.png"
-                            alt=""
-                        >
-                        <h6 class="text-center mt-6">Neuroprima</h6>
-                    </div>
-                    <div class="">
-                        <img
-                            class="shadow-lg rounded-xl"
-                            src="https://i.imgur.com/w4rCSLo.png"
-                            alt=""
-                        >
-                        <h6 class="text-center mt-6">Aspirano</h6>
-                    </div>
-                    <div class="">
-                        <img
-                            class="shadow-lg rounded-xl"
-                            src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
-                            alt=""
-                        >
-                        <h6 class="text-center mt-6">Racuni.me</h6>
+                        />
                     </div>
                 </div>
             </section>
         </div>
-    </div>
-    <div>
-        <div class="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col">
-            <div class="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
-                <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
-                    <h2 class="mb-5 font-bold text-3xl text-center text-gray-800">
-                        Our official coding guidelines
-                    </h2>
-                    <p class="mb-5 text-sm text-gray-500 text-center mb-10">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
-                    </p>
-                    <div class="text-center">
-                        <a
-                            href="/"
-                            class="py-3 px-8 font-bold text-sm tracking-wide shadow-lg text-white rounded-lg text-white bg-red-500"
-                        >
-                            Go to guidelines
-                        </a>
+        <div class="bg-gray-100">
+            <div class="container mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl" style="max-width: 1170px;">
+                <section class="py-20">
+                    <div class="mb-24 max-w-2xl mx-auto">
+                        <span class="heading block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Our projects</span>
+                        <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">The Websites We Have Created</h2>
+                        <p class="text-gray-500 text-center text-sm">We are proud of what we do. We pour our blood, sweat, and tears into every ounce of the web design and web development work we do. From our cozy nook in Bijeljina, Bosnia and Herzegovina, we are building the internet of tomorrow.</p>
                     </div>
-                </div>
-            </div>
-            <div class="inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
-                <img
-                    class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-                    src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80"
-                    alt=""
-                />
+                    <div class="grid gap-8 lg:grid-cols-3">
+                        <div class="">
+                            <img
+                                class="shadow-lg rounded-xl"
+                                src="https://i.imgur.com/rk2qMPs.png"
+                                alt=""
+                            >
+                            <h6 class="text-center mt-6">Ordinacije.me</h6>
+                        </div>
+                        <div class="">
+                            <img
+                                class="shadow-lg rounded-xl"
+                                src="https://i.imgur.com/f1O2nmj.png"
+                                alt=""
+                            >
+                            <h6 class="text-center mt-6">Apoteke.me</h6>
+                        </div>
+                        <div class="">
+                            <img
+                                class="shadow-lg rounded-xl"
+                                src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
+                                alt=""
+                            >
+                            <h6 class="text-center mt-6">Pedigres</h6>
+                        </div>
+                        <div class="">
+                            <img
+                                class="shadow-lg rounded-xl"
+                                src="https://i.imgur.com/QQVCyHP.png"
+                                alt=""
+                            >
+                            <h6 class="text-center mt-6">Neuroprima</h6>
+                        </div>
+                        <div class="">
+                            <img
+                                class="shadow-lg rounded-xl"
+                                src="https://i.imgur.com/w4rCSLo.png"
+                                alt=""
+                            >
+                            <h6 class="text-center mt-6">Aspirano</h6>
+                        </div>
+                        <div class="">
+                            <img
+                                class="shadow-lg rounded-xl"
+                                src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
+                                alt=""
+                            >
+                            <h6 class="text-center mt-6">Racuni.me</h6>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </div>
+        <section>
+            <div class="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col">
+                <div class="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
+                    <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
+                        <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 text-center font-bold mb-2">Code guidelines</p>
+                        <h2 class="mb-5 font-bold text-3xl text-center text-gray-800">
+                            Our official coding guidelines
+                        </h2>
+                        <p class="mb-5 text-sm text-gray-500 text-center mb-10">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                        </p>
+                        <div class="text-center">
+                            <a
+                                href="/"
+                                class="py-3 px-8 font-bold text-sm tracking-wide shadow-lg text-white rounded-lg text-white bg-red-500"
+                            >
+                                Go to guidelines
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inset-y-0 top-0 right-0 w-full max-w-xl px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
+                    <img
+                        class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+                        src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
 
-    <footer class="border-t mt-16">
-        <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-            <div class="flex justify-between mb-10">
-                <div class="sm:col-span-2">
-                    <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                        <img src="https://www.vertex-it.com/img/brand/final.svg" style="height: 25px;" alt="">
-                    </a>
-                    <div class="mt-6 lg:max-w-sm">
-                        <p class="text-sm text-gray-800">
-                            Vertex IT is web development agency, programming, outsourcing.
-                        </p>
-                        <p class="mt-4 text-sm text-gray-800">
-                            Bijeljina, Bosnia & Herzegovina.
-                        </p>
-                    </div>
-                </div>
-                <div class="space-y-2 text-sm">
-                    <div class="flex">
-                        <p class="mr-1 text-gray-800">Phone:</p>
-                        <a
-                            href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
-                            class="transition-colors duration-300 text-red-500 hover:text-deep-purple-800"
-                        >850-123-5021</a>
-                    </div>
-                    <div class="flex">
-                        <p class="mr-1 text-gray-800">Email:</p>
-                        <a
-                            href="mailto:info@lorem.mail" aria-label="Our email" title="Our email"
-                            class="transition-colors duration-300 text-red-500 hover:text-deep-purple-800"
-                        >info@lorem.mail</a>
-                    </div>
-                    <div class="flex">
-                        <p class="mr-1 text-gray-800">Address:</p>
-                        <a
-                            href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
-                            aria-label="Our address" title="Our address"
-                            class="transition-colors duration-300 text-red-500 hover:text-deep-purple-800"
+        <section class="text-gray-600 body-font relative">
+            <div class="absolute inset-0 bg-gray-300">
+                <iframe
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="map"
+                    scrolling="no"
+                    src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+                    style="filter: grayscale(1) contrast(1.2) opacity(0.4);"
+                ></iframe>
+            </div>
+            <div class="container px-5 py-24 mx-auto flex">
+                <div class="lg:w-1/3 md:w-1/2 bg-white border-t-2 border-red-500 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+                    <h2 class="mb-5 font-bold text-2xl text-center text-gray-800">Let's get in touch</h2>
+                    <p class="mb-5 text-sm text-gray-500 text-center">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+                    <div class="relative mb-4">
+                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         >
-                            312 Lovely Street, NY
-                        </a>
                     </div>
+                    <div class="relative mb-4">
+                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                        <input
+                            type="name"
+                            id="name"
+                            name="name"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        >
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us about your idea..."
+                            class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                        ></textarea>
+                    </div>
+                    <button class="text-white text-sm bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded font-bold tracking-wide">
+                        Send us a message
+                    </button>
+                    <p class="text-xs text-center text-gray-500 mt-3">
+                        Expect answer in 2 - 3 business days.
+                    </p>
                 </div>
             </div>
-            <div class="pt-5 pb-10 border-t">
-                <p class="text-sm text-center text-gray-500">
-                    Vertex IT © 2021. All rights reserved.
-                </p>
+        </section>
+
+        <footer class="border-t">
+            <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div class="flex justify-between mb-32">
+                    <div class="sm:col-span-2">
+                        <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+                            <img src="https://www.vertex-it.com/img/brand/final.svg" style="height: 25px;" alt="">
+                        </a>
+                        <div class="mt-6 lg:max-w-sm">
+                            <p class="text-sm text-gray-800">
+                                Vertex IT is web development agency, programming, outsourcing.
+                            </p>
+                            <p class="mt-4 text-sm text-gray-800">
+                                Bijeljina, Bosnia & Herzegovina.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex">
+                            <p class="mr-1 text-gray-800">Phone:</p>
+                            <a
+                                href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
+                                class="transition-colors duration-300 text-red-500 hover:text-deep-purple-800"
+                            >850-123-5021
+                            </a>
+                        </div>
+                        <div class="flex">
+                            <p class="mr-1 text-gray-800">Email:</p>
+                            <a
+                                href="mailto:info@lorem.mail" aria-label="Our email" title="Our email"
+                                class="transition-colors duration-300 text-red-500 font-bold hover:text-red-600"
+                            >
+                                info@vertex-it.com
+                            </a>
+                        </div>
+                        <div class="flex">
+                            <p class="mr-1 text-gray-800">Address:</p>
+                            <a
+                                href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
+                                aria-label="Our address" title="Our address"
+                                class="transition-colors duration-300 text-red-500 font-bold hover:text-red-600"
+                            >
+                                312 Lovely Street, NY
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 pb-10 border-t">
+                    <p class="text-sm text-center text-gray-500">
+                        Vertex IT © 2021. All rights reserved.
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
