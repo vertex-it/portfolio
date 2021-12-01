@@ -12,6 +12,8 @@
             href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Work+Sans&family=Architects+Daughter"
             rel="stylesheet"
         >
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
         <style>
             h1, h2, h3, h4, h5, h6 {
@@ -33,14 +35,14 @@
 
             @media (min-width: 768px) {
                 .container {
-                    max-width: 1170px;
+                    max-width: calc(1170px + 1rem);
                 }
             }
         </style>
     </head>
     <body>
-        <div class="border-b border-gray-100 md:h-screen">
-            <div class="flex flex-col justify-between h-full container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+        <div class="border-b border-gray-100 lg:h-screen">
+            <div class="flex flex-col justify-between h-full container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
                 <header class="flex flex-wrap items-center justify-between py-4 md:py-8">
                     <a href="/" aria-label="Vertex IT" title="Vertex IT">
                         <img
@@ -69,7 +71,7 @@
                             </svg>
                         </button>
                     </div>
-                    <nav class="toggle hidden md:flex w-full md:w-auto md:space-x-8 mt-4 md:mt-0">
+                    <nav class="toggle hidden md:flex w-full md:w-auto md:space-x-8 mt-4 md:mt-0 tracking-tight">
                         <a
                             href="/" aria-label="Our product" title="Our product"
                             class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-red-500 font-semibold transition-colors duration-200 hover:text-red-600"
@@ -102,12 +104,16 @@
                         </a>
                     </nav>
                 </header>
-                <section class="flex flex-wrap justify-between">
-                    <div class="w-full md:w-1/2 order-2 md:order-1 flex flex-col justify-center md:items-start mb-16 md:mb-0 md:pr-10">
+                <section class="flex flex-wrap justify-between py-10">
+                    <div
+                        class="w-full md:w-1/2 order-2 md:order-1 flex flex-col justify-center md:items-start mb-16 md:mb-0 md:pr-10"
+                        data-aos="fade-down"
+                        data-aos-duration="1300"
+                    >
                         <h1 class="lg:leading-tight text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-7">
                             Full-cycle software <br><span class="text-red-500">development company</span>
                         </h1>
-                        <p class="text-center md:text-left mb-7 text-gray-500">
+                        <p class="text-center md:text-left mb-7 text-gray-700">
                             Innovative web applications tailor-made for your specific online business requirements.
                             From Bijeljina, Bosnia & Herzegovina.
                         </p>
@@ -120,25 +126,40 @@
                         </a>
                     </div>
                     <div class="w-full md:w-1/2 order-1 md:order-2 md:pl-20 mb-10 md:mb-0">
-                        <img class="w-2/3 md:w-full mx-auto max-w-72 md:max-w-full max-h-72 md:max-h-full" alt="hero" src="img/hero.svg">
+                        <img
+                            class="w-2/3 md:w-full mx-auto max-w-72 md:max-w-full max-h-72 md:max-h-full"
+                            alt="hero"
+                            src="img/hero.svg"
+                            data-aos="fade-left"
+                            data-aos-duration="1300"
+                        >
                     </div>
                 </section>
                 <section class="pb-20">
-                    <div class="grid gap-12 row-gap-5 md:grid-cols-3">
-                        <div>
-                            <h6 class="mb-9 text-2xl font-semibold tracking-wide text-center">Reliable Agency Partner</h6>
+                    <div class="grid gap-14 row-gap-5 md:grid-cols-3">
+                        <div
+                            data-aos="zoom-out"
+                            data-aos-duration="1200"
+                        >
+                            <h6 class="mb-9 text-xl font-semibold tracking-wide text-center">Reliable Agency Partner</h6>
                             <p class="text-center tracking-tight leading-relaxed text-gray-500">
                                 Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
                             </p>
                         </div>
-                        <div>
-                            <h6 class="mb-9 text-2xl font-semibold tracking-wide text-center">Technical Advisor</h6>
+                        <div
+                            data-aos="zoom-out"
+                            data-aos-duration="1200"
+                        >
+                            <h6 class="mb-9 text-xl font-semibold tracking-wide text-center">Technical Advisor</h6>
                             <p class="text-center tracking-tight leading-relaxed text-gray-500">
                                 Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
                             </p>
                         </div>
-                        <div>
-                            <h6 class="mb-9 text-2xl font-semibold tracking-wide text-center">Embedded Team</h6>
+                        <div
+                            data-aos="zoom-out"
+                            data-aos-duration="1200"
+                        >
+                            <h6 class="mb-9 text-xl font-semibold tracking-wide text-center">Embedded Team</h6>
                             <p class="text-center tracking-tight leading-relaxed text-gray-500">
                                 We've written extensive documentation for components and tools, so you never have to reverse engineer anything.
                             </p>
@@ -148,7 +169,7 @@
             </div>
         </div>
         <div class="bg-gradient-to-b from-gray-50 to-white border-b border-gray-100">
-            <div class="container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+            <div class="container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
                 <section class="py-20">
                     <div class="mb-14 max-w-2xl mx-auto">
                         <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold text-center mb-2">Our services</p>
@@ -162,6 +183,8 @@
                     <div class="grid gap-8 row-gap-5 lg:grid-cols-3">
                         <div
                             class="p-12 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                            data-aos="zoom-out"
+                            data-aos-duration="1000"
                         >
                             <img src="img/web-development.svg" class="mx-auto w-16" alt="">
                             <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Web Development</h6>
@@ -171,6 +194,9 @@
                         </div>
                         <div
                             class="text-center p-12 overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                            data-aos="zoom-out"
+                            data-aos-duration="1000"
+                            data-aos-delay="300"
                         >
                             <img src="img/hosting.svg" class="mx-auto w-16" alt="">
                             <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Hosting & Cloud</h6>
@@ -180,6 +206,9 @@
                         </div>
                         <div
                             class="text-center px-10 py-12 overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                            data-aos="zoom-out"
+                            data-aos-duration="1000"
+                            data-aos-delay="600"
                         >
                             <img src="img/seo.svg" class="mx-auto w-16" alt="">
                             <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">SEO Optimization</h6>
@@ -190,11 +219,11 @@
 
                     </div>
                 </section>
-                <!--            </div>-->
-                <!--        </div>-->
-
-                <!--        <div class="container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">-->
-                <section class="mb-16">
+                <section
+                    class="mb-16"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                >
                     <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
                         <div class="flex flex-col justify-center">
                             <div class="max-w-xl mb-6">
@@ -336,7 +365,11 @@
                         </div>
                     </div>
                 </section>
-                <section class="my-32">
+                <section
+                    class="my-32"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                >
                     <div class="mb-28 max-w-2xl mx-auto">
                         <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Technology</p>
                         <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">Our main technology stack</h2>
@@ -369,7 +402,11 @@
                         </div>
                     </div>
                 </section>
-                <section class="my-32">
+                <section
+                    class="my-32"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                >
                     <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
                         <div class="lg:py-6 lg:pr-16">
                             <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Our process</p>
@@ -522,8 +559,12 @@
             </div>
         </div>
         <div class="portfolio-section border-b border-gray-100">
-            <div class="container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
-                <section class="py-20">
+            <div class="container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+                <section
+                    class="py-20"
+                    data-aos="zoom-out-down"
+                    data-aos-duration="1500"
+                >
                     <div class="mb-24 max-w-2xl mx-auto">
                         <span class="heading block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Our projects</span>
                         <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">The Websites We Have Created</h2>
@@ -584,7 +625,7 @@
         </div>
         <section class="border-b border-gray-100">
             <div class="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col">
-                <div class="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
+                <div data-aos="fade-right" data-aos-duration="1300" class="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
                     <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
                         <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 text-center font-bold mb-2">Code guidelines</p>
                         <h2 class="mb-5 font-bold text-3xl text-center text-gray-800">
@@ -614,7 +655,7 @@
             </div>
         </section>
 
-        <div class="container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+        <div class="container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
             <section class="py-20">
                 <div class="mb-24">
                     <span class="heading block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">
@@ -623,7 +664,7 @@
                     <h2 class=" mb-4 text-3xl font-bold text-gray-900 text-center">What clients are saying about us</h2>
                 </div>
                 <div class="grid gap-8 lg:grid-cols-3">
-                    <div class="border border-gray-200 p-8 rounded flex flex-col justify-between">
+                    <div data-aos="fade-out" data-aos-duration="1100" class="border border-gray-200 p-8 rounded flex flex-col justify-between">
                         <div class="pb-5">
                             <q class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</q>
                             <div class="flex items-center mt-3">
@@ -679,7 +720,7 @@
                             <span class="text-gray-400 text-sm">Grand Show</span>
                         </div>
                     </div>
-                    <div class="border border-gray-200 p-8 rounded flex flex-col justify-between">
+                    <div data-aos="fade-out" data-aos-duration="1100" data-aos-delay="300" class="border border-gray-200 p-8 rounded flex flex-col justify-between">
                         <div class="pb-5">
                             <q class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</q>
                             <div class="flex items-center mt-3">
@@ -735,7 +776,7 @@
                             <span class="text-gray-400 text-sm">Grand Show</span>
                         </div>
                     </div>
-                    <div class="border border-gray-200 p-8 rounded flex flex-col justify-between">
+                    <div data-aos="fade-out" data-aos-duration="1100" data-aos-delay="600" class="border border-gray-200 p-8 rounded flex flex-col justify-between">
                         <div class="pb-5">
                             <q class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</q>
                             <div class="flex items-center mt-3">
@@ -795,10 +836,10 @@
             </section>
         </div>
 
-        <section class="px-4 lg:px-20">
+        <section class="lg:px-20">
             <div class="bg-blue-50 rounded py-10 lg:py-24">
-                <div class="container mx-auto flex flex-wrap lg:flex-nowrap justify-center">
-                    <div class="order-2 lg:order-1 bg-white shadow rounded-xl px-4 lg:px-12 py-6 lg:py-14 w-full lg:mr-14 mx-4 lg:mx-0">
+                <div class="container px-4 mx-auto flex flex-wrap lg:flex-nowrap justify-center">
+                    <div class="order-2 lg:order-1 bg-white shadow rounded-xl px-4 lg:px-12 py-6 lg:py-14 w-full lg:mr-14">
                         <form action="">
                             <div class="mb-8">
                                 <label for="email" class="text-gray-500 block mb-1">Email</label>
@@ -834,32 +875,32 @@
                             </button>
                         </form>
                     </div>
-                    <div class="order-1 lg:order-2 mb-6 lg:mb-0 w-full mx-4 lg:ml-14">
-                        <h3 class="text-xl lg:text-5xl leading-snug font-semibold mb-10">Let's talk <br>about your next<br><span class="text-red-500 underline">project</span></h3>
-                        <p class="text-gray-700 lg:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</p>
+                    <div class="order-1 lg:order-2 mb-6 lg:mb-0 w-full lg:ml-14">
+                        <h3 class="text-2xl lg:text-5xl leading-snug font-semibold mb-10">Let's talk <br>about your next<br><span class="text-red-500 underline">project</span></h3>
+                        <p class="text-gray-600 lg:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="pt-16 container mx-auto">
-            <div class="flex flex-wrap lg:flex-nowrap justify-between mb-24">
-                <div class="sm:col-span-2">
-                    <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+        <footer class="pt-16 container px-4 mx-auto">
+            <div class="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-between mb-14 lg:mb-24">
+                <div class="mb-16 lg:mb-0">
+                    <a href="/" title="Vertex IT logo">
                         <img src="img/logo.svg" style="height: 25px;" alt="">
                     </a>
                 </div>
-                <div>
-                    <h5 class="text-gray-600 mb-8 uppercase tracking-widest text-lg">Contact Info</h5>
-                    <ul class="leading-loose text-lg">
+                <div class="mb-12 lg:mb-0">
+                    <h5 class="text-gray-600 mb-4 lg:mb-8 uppercase tracking-widest font-semibold">Contact Info</h5>
+                    <ul class="leading-loose">
                         <li class="text-gray-600">info@vertex-it.com</li>
                         <li class="text-gray-600">Ulica Uroša Predića 14</li>
                         <li class="text-gray-600">Bijeljina</li>
                     </ul>
                 </div>
                 <div>
-                    <h5 class="text-gray-600 mb-8 uppercase tracking-widest text-lg">Links</h5>
-                    <ul class="leading-loose text-lg">
+                    <h5 class="text-gray-600 mb-4 lg:mb-8 uppercase tracking-widest font-semibold">Links</h5>
+                    <ul class="leading-loose">
                         <li>
                             <a class="text-gray-600 hover:text-red-500" href="#">Home</a>
                         </li>
@@ -879,7 +920,7 @@
                 </div>
             </div>
             <div class="py-8 border-t border-gray-150">
-                <p class="text-center text-gray-600 text-lg">
+                <p class="text-center text-gray-600">
                     Vertex IT ©2021.
                 </p>
             </div>
@@ -892,6 +933,13 @@
                     navToggle.item(i).classList.toggle('hidden')
                 }
             }
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+                offset: 200,
+            });
         </script>
     </body>
 </html>
