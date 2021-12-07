@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Laravel | Vertex IT | Web Development Agency</title>
+
+        <link rel="icon" href="favicon.ico">
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Work+Sans&family=Architects+Daughter"
+            rel="stylesheet"
+        >
+
+
+        <style>
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Ubuntu', sans-serif;
+            }
+
+            * {
+                font-family: 'Work Sans', serif;
+            }
+
+            .heading {
+                font-family: 'Architects Daughter', serif;
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width: calc(1170px + 1rem);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="relative bg-gray-50 overflow-hidden">
+            <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
+                <div class="relative h-full max-w-7xl mx-auto">
+                    <svg class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+                        <defs>
+                            <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+                    </svg>
+                    <svg class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2" width="404" height="784" fill="none" viewBox="0 0 404 784">
+                        <defs>
+                            <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="relative pb-16 sm:pb-24">
+                <div class="px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+                    <header class="flex flex-wrap items-center justify-between py-4 md:py-8">
+                        <a href="index.html" aria-label="Vertex IT" title="Vertex IT">
+                            <img
+                                src="img/logo.svg"
+                                class="h-7"
+                                alt="Vertex IT logo"
+                            >
+                        </a>
+                        <div class="flex md:hidden">
+                            <button class="p-1 text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500" id="hamburger">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <nav class="toggle hidden md:flex w-full md:w-auto md:space-x-8 mt-4 md:mt-0 tracking-tight">
+                            <a
+                                href="/" aria-label="Our product" title="Our product"
+                                class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500"
+                            >
+                                Home
+                            </a>
+                            <a
+                                href="services.html"
+                                aria-label="Our services"
+                                title="Our services"
+                                class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-red-500 font-semibold transition-colors duration-200 hover:text-red-600"
+                            >
+                                Services
+                            </a>
+                            <a
+                                href="/" aria-label="Product pricing" title="Product pricing"
+                                class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500"
+                            >
+                                Our work
+                            </a>
+                            <a
+                                href="contact.html" aria-label="Product pricing" title="Product pricing"
+                                class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500"
+                            >
+                                Contact us
+                            </a>
+                        </nav>
+                    </header>
+
+                    <!--
+                      Mobile menu, show/hide based on menu open state.
+
+                      Entering: "duration-150 ease-out"
+                        From: "opacity-0 scale-95"
+                        To: "opacity-100 scale-100"
+                      Leaving: "duration-100 ease-in"
+                        From: "opacity-100 scale-100"
+                        To: "opacity-0 scale-95"
+                    -->
+                    <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                        <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div class="px-5 pt-4 flex items-center justify-between">
+                                <div>
+                                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+                                </div>
+                                <div class="-mr-2">
+                                    <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                        <span class="sr-only">Close menu</span>
+                                        <!-- Heroicon name: outline/x -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="px-2 pt-2 pb-3">
+                                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
+
+                                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+
+                                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+                                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
+                            </div>
+                            <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+                    <div class="mb-14 max-w-2xl mx-auto">
+                        <h1 class="tracking-wide text-5xl mb-4 font-bold text-gray-900 text-center">
+                            Laravel
+                        </h1>
+                        <p class="text-gray-500 text-center text-lg">
+                            We use this popular PHP framework for developing challenging web applications, web platforms and API’s
+                        </p>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+
+
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="bg-red-50">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-20 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl font-extrabold text-gray-900 md:text-4xl">
+                    <span class="block mb-1">Ready to dive in?</span>
+                    <span class="block text-red-500">Send us a message.</span>
+                </h2>
+                <a
+                    href="/"
+                    class="mx-auto md:mx-0 bg-red-500 font-semibold text-white text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600"
+                    title="Contact us"
+                >
+                    Contact us
+                </a>
+            </div>
+        </div>
+
+
+        <footer class="pt-16 container px-4 mx-auto">
+            <div class="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-between mb-14 lg:mb-24">
+                <div class="mb-16 lg:mb-0">
+                    <a class="mb-4 lg:mb-8 block" href="/" title="Vertex IT logo">
+                        <img src="img/logo.svg" style="height: 25px;" alt="">
+                    </a>
+                    <ul class="leading-loose">
+                        <li class="text-gray-600">Uroša Predića 14</li>
+                        <li class="text-gray-600">76300 Bijeljina</li>
+                        <li class="text-gray-600">Bosnia and Herzegovina</li>
+                        <li class="text-gray-600">VAT ID: 511637020004</li>
+                    </ul>
+                </div>
+                <div class="mb-12 lg:mb-0">
+                    <h5 class="mb-4 lg:mb-8 text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact Info</h5>
+                    <ul class="leading-loose">
+                        <li class="text-gray-600">info@vertex-it.com</li>
+                        <li class="text-gray-600">Ulica Uroša Predića 14</li>
+                        <li class="text-gray-600">Bijeljina</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="mb-4 lg:mb-8 text-sm font-semibold text-gray-400 tracking-wider uppercase">Links</h5>
+                    <ul class="leading-loose">
+                        <li>
+                            <a class="text-gray-600 hover:text-red-500" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-red-500" href="#">About us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-red-500" href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-red-500" href="#">Our work</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-red-500" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-8 border-t border-gray-150">
+                <p class="text-base text-gray-400 xl:text-center">
+                    &copy; 2021 Vertex IT
+                </p>
+            </div>
+        </footer>
+
+
+    </body>
+</html>

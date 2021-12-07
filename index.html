@@ -6,6 +6,8 @@
 
         <title>Vertex IT - Web Development Agency</title>
 
+        <link rel="icon" href="favicon.ico">
+
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link
@@ -16,7 +18,7 @@
 
 
         <style>
-            h1, h2, h3, h4, h5, h6 {
+            h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                 font-family: 'Ubuntu', sans-serif;
             }
 
@@ -47,7 +49,7 @@
                     <a href="/" aria-label="Vertex IT" title="Vertex IT">
                         <img
                             src="img/logo.svg"
-                            style="height: 28px;"
+                            class="h-7"
                             alt="Vertex IT logo"
                         >
                     </a>
@@ -79,25 +81,21 @@
                             Home
                         </a>
                         <a
-                            href="/" aria-label="Our product" title="Our product"
-                            class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500"
-                        >
-                            About us
-                        </a>
-                        <a
-                            href="/" aria-label="Our product" title="Our product"
+                            href="services.html"
+                            aria-label="Our services"
+                            title="Our services"
                             class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500"
                         >
                             Services
                         </a>
                         <a
-                            href="/" aria-label="Product pricing" title="Product pricing"
+                            href="our-work.html" aria-label="Product pricing" title="Product pricing"
                             class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500"
                         >
                             Our work
                         </a>
                         <a
-                            href="/" aria-label="Product pricing" title="Product pricing"
+                            href="contact.html" aria-label="Product pricing" title="Product pricing"
                             class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500"
                         >
                             Contact us
@@ -111,7 +109,7 @@
                         data-aos-duration="1300"
                     >
                         <h1 class="lg:leading-tight text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-7">
-                            Full-cycle web <span class="text-red-500">development company</span>
+                            Full-cycle web <span class="text-red-500 h1">development company</span>
                         </h1>
                         <p class="text-center md:text-left mb-7 text-gray-700">
                             Innovative web applications tailor-made for your specific online business requirements.
@@ -173,7 +171,7 @@
                 <section class="py-20">
                     <div class="mb-14 max-w-2xl mx-auto">
                         <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold text-center mb-2">Our services</p>
-                        <h2 class="tracking-wide text-3xl mb-4 font-bold text-gray-900 text-center">
+                        <h2 class="tracking-wide text-4xl mb-4 font-bold text-gray-900 text-center">
                             What we offer?
                         </h2>
                         <p class="text-gray-500 text-center">
@@ -181,41 +179,47 @@
                         </p>
                     </div>
                     <div class="grid gap-8 row-gap-5 lg:grid-cols-3">
-                        <div
-                            class="p-12 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
-                            data-aos="zoom-out"
-                            data-aos-duration="1000"
-                        >
-                            <img src="img/web-development.svg" class="mx-auto w-16" alt="">
-                            <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Web Development</h6>
-                            <p class="text-gray-500 text-sm">
-                                Innovative web applications tailor-made for your specific online business requirements.
-                            </p>
-                        </div>
-                        <div
-                            class="text-center p-12 overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
-                            data-aos="zoom-out"
-                            data-aos-duration="1000"
-                            data-aos-delay="300"
-                        >
-                            <img src="img/hosting.svg" class="mx-auto w-16" alt="">
-                            <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Consulting</h6>
-                            <p class="text-gray-500 text-sm">
-                                Innovative web applications tailor-made for your specific online business requirements.
-                            </p>
-                        </div>
-                        <div
-                            class="text-center px-10 py-12 overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
-                            data-aos="zoom-out"
-                            data-aos-duration="1000"
-                            data-aos-delay="600"
-                        >
-                            <img src="img/seo.svg" class="mx-auto w-16" alt="">
-                            <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Outsourcing</h6>
-                            <p class="text-gray-500 text-sm">
-                                Innovative web applications tailor-made for your specific online business requirements.
-                            </p>
-                        </div>
+                        <a href="services.html#web-development">
+                            <div
+                                class="p-12 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                                data-aos="zoom-out"
+                                data-aos-duration="1000"
+                            >
+                                <img src="img/web-development.svg" class="mx-auto w-16" alt="">
+                                <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Web Development</h6>
+                                <p class="text-gray-500 text-sm">
+                                    Innovative web applications tailor-made for your specific online business requirements.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="services.html#consulting">
+                            <div
+                                class="text-center p-12 overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                                data-aos="zoom-out"
+                                data-aos-duration="1000"
+                                data-aos-delay="300"
+                            >
+                                <img src="img/hosting.svg" class="mx-auto w-16" alt="">
+                                <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Consulting</h6>
+                                <p class="text-gray-500 text-sm">
+                                    Innovative web applications tailor-made for your specific online business requirements.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="services.html#outsourcing">
+                            <div
+                                class="text-center px-10 py-12 overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                                data-aos="zoom-out"
+                                data-aos-duration="1000"
+                                data-aos-delay="600"
+                            >
+                                <img src="img/seo.svg" class="mx-auto w-16" alt="">
+                                <h6 class="font-semibold tracking-wide text-xl mt-6 mb-9">Outsourcing</h6>
+                                <p class="text-gray-500 text-sm">
+                                    Innovative web applications tailor-made for your specific online business requirements.
+                                </p>
+                            </div>
+                        </a>
 
                     </div>
                 </section>
@@ -228,7 +232,7 @@
                         <div class="flex flex-col justify-center">
                             <div class="max-w-xl mb-6">
                                 <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Who we are</p>
-                                <h2 class="max-w-lg mb-8 text-3xl font-bold text-gray-900">
+                                <h2 class="max-w-lg mb-8 text-4xl font-bold text-gray-900">
                                     The quick, brown fox jumps over a lazy dog
                                 </h2>
                                 <p class="text-gray-500">
@@ -372,7 +376,7 @@
                 >
                     <div class="mb-28 max-w-2xl mx-auto">
                         <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Technology</p>
-                        <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">Our main technology stack</h2>
+                        <h2 class="text-center mb-4 text-4xl font-bold text-gray-900">Our main technology stack</h2>
                         <p class="text-gray-500 text-center">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
                         </p>
@@ -410,7 +414,7 @@
                     <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
                         <div class="lg:py-6 lg:pr-16">
                             <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Our process</p>
-                            <h2 class="tracking-wide text-3xl mb-10 font-bold text-gray-900">
+                            <h2 class="tracking-wide text-4xl mb-10 font-bold text-gray-900">
                                 Development process
                             </h2>
                             <div class="flex">
@@ -565,7 +569,7 @@
                 >
                     <div class="mb-24 max-w-2xl mx-auto">
                         <span class="heading block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Case study</span>
-                        <h2 class="text-center mb-4 text-3xl font-bold text-gray-900">What we did for our clients</h2>
+                        <h2 class="text-center mb-4 text-4xl font-bold text-gray-900">What we did for our clients</h2>
                         <p class="text-gray-500 text-center">
                             Learn about our latest success stories of web applications development, and how we helped our clients build and grow their businesses.
                         </p>
@@ -628,7 +632,7 @@
                 <div class="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
                     <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
                         <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 text-center font-bold mb-2">Code guidelines</p>
-                        <h2 class="mb-5 font-bold text-3xl text-center text-gray-800">
+                        <h2 class="mb-5 font-bold text-4xl text-center text-gray-800">
                             Our official coding guidelines
                         </h2>
                         <p class="mb-5 text-gray-500 text-center mb-10">
@@ -656,234 +660,121 @@
         </section>
 
         <div class="container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
-            <section class="py-20">
+            <section class="py-24">
                 <div class="mb-24">
                     <span class="heading block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">
                         Testimonials
                     </span>
-                    <h2 class=" mb-4 text-3xl font-bold text-gray-900 text-center">What clients are saying about us</h2>
+                    <h2 class="mb-4 text-4xl font-bold text-gray-900 text-center">What clients are saying about us</h2>
                 </div>
-                <img src="https://tailwindui.com/img/components/testimonials.02-simple-centered-xl.png" alt="">
-<!--                <div class="grid gap-8 lg:grid-cols-3">-->
-<!--                    <div data-aos="fade-out" data-aos-duration="1100" class="border border-gray-200 p-8 rounded flex flex-col justify-between">-->
-<!--                        <div class="pb-5">-->
-<!--                            <q class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</q>-->
-<!--                            <div class="flex items-center mt-3">-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="pt-5">-->
-<!--                            <h6 class="text-gray-800">Saša Popović</h6>-->
-<!--                            <span class="text-gray-400 text-sm">Grand Show</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div data-aos="fade-out" data-aos-duration="1100" data-aos-delay="300" class="border border-gray-200 p-8 rounded flex flex-col justify-between">-->
-<!--                        <div class="pb-5">-->
-<!--                            <q class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</q>-->
-<!--                            <div class="flex items-center mt-3">-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="pt-5">-->
-<!--                            <h6 class="text-gray-800">Saša Popović</h6>-->
-<!--                            <span class="text-gray-400 text-sm">Grand Show</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div data-aos="fade-out" data-aos-duration="1100" data-aos-delay="600" class="border border-gray-200 p-8 rounded flex flex-col justify-between">-->
-<!--                        <div class="pb-5">-->
-<!--                            <q class="text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</q>-->
-<!--                            <div class="flex items-center mt-3">-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                                <svg-->
-<!--                                    width="15"-->
-<!--                                    height="15"-->
-<!--                                    class="mr-1 fill-current text-yellow-400"-->
-<!--                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                    viewBox="0 0 20 20"-->
-<!--                                >-->
-<!--                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />-->
-<!--                                </svg>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="pt-5">-->
-<!--                            <h6 class="text-gray-800">Saša Popović</h6>-->
-<!--                            <span class="text-gray-400 text-sm">Grand Show</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                    <div class="relative">
+<!--                        <img class="mx-auto h-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kellogg%27s-Logo.svg/1024px-Kellogg%27s-Logo.svg.png" alt="">-->
+                        <blockquote class="mt-10">
+                            <div class="max-w-3xl mx-auto text-center text-xl leading-8 font-medium text-gray-700">
+                                <p>
+                                    &quot;Since having our new website built by Thrive, we have seen a 200% increase in the number of online contact forms being filled out and returned to us. Matt and his team worked closely with us to provide a site that met all of the criteria that we were looking for. The end result was a website that is attractive, organized and effective. Thanks to Thrive for all of your hard work and support!&quot;
+                                </p>
+                            </div>
+                            <footer class="mt-10">
+                                <img class="mx-auto h-14 w-14 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                <div class="mt-6 mx-auto text-center">
+                                    <div class="text-gray-900 uppercase tracking-wider font-semibold text-xl">Judith Black</div>
+                                    <div class="text-gray-500">CEO, Workcation</div>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
+            </div>
             </section>
         </div>
 
-        <section class="">
-            <div class="bg-gradient-to-br from-blue-50 to-blue-200 rounded py-10 lg:py-24">
-                <div class="container px-4 mx-auto flex flex-wrap lg:flex-nowrap justify-center">
-                    <div class="order-2 lg:order-1 bg-white shadow rounded-xl px-4 lg:px-8 py-6 lg:py-8 w-full lg:mr-14">
-                        <form action="">
-                            <div class="mb-8">
-                                <label for="email" class="text-gray-500 block mb-1">Email</label>
-                                <input
-                                    placeholder="mail@mail.com"
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    class="w-full rounded border border-gray-300 p-2 lg:p-3"
-                                >
-                            </div>
-                            <div class="mb-8">
-                                <label for="name" class="text-gray-500 block mb-1">Name</label>
-                                <input
-                                    type="text"
-                                    placeholder="Enter your name"
-                                    id="name"
-                                    name="name"
-                                    class="w-full rounded border border-gray-300 p-2 lg:p-3"
-                                >
-                            </div>
-                            <div class="mb-8">
-                                <label for="message" class="text-gray-500 block mb-1">Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    placeholder="Your message"
-                                    rows="5"
-                                    class="w-full rounded border border-gray-300 p-2 lg:p-3"
-                                ></textarea>
-                            </div>
-                            <button class="w-full bg-red-500 font-semibold text-white rounded py-3 px-4 lg:px-8 transition-colors duration-200 hover:bg-red-600">
-                                Send Message
-                            </button>
-                        </form>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="bg-white py-16 lg:py-24">
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative py-24 px-8 bg-indigo-500 rounded-xl shadow-2xl overflow-hidden lg:px-16 lg:grid lg:grid-cols-2 lg:gap-x-8">
+                    <div class="absolute inset-0 opacity-50 filter saturate-0 mix-blend-multiply">
+                        <img src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80" alt="" class="w-full h-full object-cover">
                     </div>
-                    <div class="order-1 lg:order-2 mb-6 lg:mb-0 w-full lg:ml-14">
-                        <h3 class="text-2xl lg:text-5xl font-semibold mb-10">Let's talk <br>about your next<br><span class="text-red-500 underline">project</span></h3>
-                        <p class="text-gray-600 lg:text-lg">Send us a message about your business idea and we will respond to you in the next 2-3 days.</p>
+                    <div class="relative lg:col-span-1">
+                        <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="">
+                        <blockquote class="mt-6 text-white">
+                            <p class="text-xl font-medium sm:text-2xl">Workflow has completely transformed how we interact with customers. We've seen record bookings, higher customer satisfaction, and reduced churn.</p>
+                            <footer class="mt-6">
+                                <p class="flex flex-col font-medium">
+                                    <span>Marie Chilvers</span>
+                                    <span>CEO, Workcation</span>
+                                </p>
+                            </footer>
+                        </blockquote>
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <section class="bg-gradient-to-br from-blue-50 to-blue-200 rounded py-10 lg:py-24">
+            <div class="container px-4 mx-auto flex flex-wrap lg:flex-nowrap justify-center">
+                <div class="order-2 lg:order-1 bg-white shadow rounded-xl px-4 lg:px-8 py-6 lg:py-8 w-full lg:mr-14">
+                    <form action="">
+                        <div class="mb-8">
+                            <label for="email" class="text-gray-500 block mb-1">Email</label>
+                            <input
+                                placeholder="mail@mail.com"
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="w-full rounded border border-gray-300 p-2 lg:p-3"
+                            >
+                        </div>
+                        <div class="mb-8">
+                            <label for="name" class="text-gray-500 block mb-1">Name</label>
+                            <input
+                                type="text"
+                                placeholder="Enter your name"
+                                id="name"
+                                name="name"
+                                class="w-full rounded border border-gray-300 p-2 lg:p-3"
+                            >
+                        </div>
+                        <div class="mb-8">
+                            <label for="message" class="text-gray-500 block mb-1">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Your message"
+                                rows="5"
+                                class="w-full rounded border border-gray-300 p-2 lg:p-3"
+                            ></textarea>
+                        </div>
+                        <button class="w-full bg-red-500 font-semibold text-white rounded py-3 px-4 lg:px-8 transition-colors duration-200 hover:bg-red-600">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="order-1 lg:order-2 mb-6 lg:mb-0 w-full lg:ml-14">
+                    <h3 class="text-2xl lg:text-5xl font-semibold mb-10">Let's talk <br>about your next<br><span class="text-red-500 underline">project</span></h3>
+                    <p class="text-gray-600 lg:text-lg">Send us a message about your business idea and we will respond to you in the next 2-3 days.</p>
+                </div>
+            </div>
         </section>
+
+        <div class="bg-red-50">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-20 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl font-extrabold text-gray-900 md:text-4xl">
+                    <span class="block mb-1">Ready to dive in?</span>
+                    <span class="block text-red-500">Send us a message.</span>
+                </h2>
+                <a
+                    href="contact.html"
+                    class="mx-auto md:mx-0 bg-red-500 font-semibold text-white text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600"
+                    title="Contact us"
+                >
+                    Contact us
+                </a>
+            </div>
+        </div>
 
         <footer class="pt-16 container px-4 mx-auto">
             <div class="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-between mb-14 lg:mb-24">
@@ -899,7 +790,7 @@
                     </ul>
                 </div>
                 <div class="mb-12 lg:mb-0">
-                    <h5 class="text-gray-600 mb-4 lg:mb-8 uppercase tracking-widest font-semibold">Contact Info</h5>
+                    <h5 class="mb-4 lg:mb-8 text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact Info</h5>
                     <ul class="leading-loose">
                         <li class="text-gray-600">info@vertex-it.com</li>
                         <li class="text-gray-600">Ulica Uroša Predića 14</li>
@@ -907,19 +798,16 @@
                     </ul>
                 </div>
                 <div>
-                    <h5 class="text-gray-600 mb-4 lg:mb-8 uppercase tracking-widest font-semibold">Links</h5>
+                    <h5 class="mb-4 lg:mb-8 text-sm font-semibold text-gray-400 tracking-wider uppercase">Links</h5>
                     <ul class="leading-loose">
                         <li>
                             <a class="text-gray-600 hover:text-red-500" href="#">Home</a>
                         </li>
                         <li>
-                            <a class="text-gray-600 hover:text-red-500" href="#">About us</a>
+                            <a class="text-gray-600 hover:text-red-500" href="services.html">Services</a>
                         </li>
                         <li>
-                            <a class="text-gray-600 hover:text-red-500" href="#">Services</a>
-                        </li>
-                        <li>
-                            <a class="text-gray-600 hover:text-red-500" href="#">Our work</a>
+                            <a class="text-gray-600 hover:text-red-500" href="our-work.html">Our work</a>
                         </li>
                         <li>
                             <a class="text-gray-600 hover:text-red-500" href="#">Contact us</a>
@@ -928,8 +816,8 @@
                 </div>
             </div>
             <div class="py-8 border-t border-gray-150">
-                <p class="text-center text-gray-600">
-                    Vertex IT ©2021.
+                <p class="text-base text-gray-400 xl:text-center">
+                    &copy; 2021 Vertex IT
                 </p>
             </div>
         </footer>
