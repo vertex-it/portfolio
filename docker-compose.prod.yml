@@ -1,0 +1,6 @@
+services:
+    app:
+        image: repo_user/repo_name:tag
+
+volumes:
+    mysqldata:

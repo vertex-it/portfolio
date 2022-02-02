@@ -1,0 +1,20 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/dev.Dockerfile
+            args:
+                HOST_UID: '${HOST_UID}'
+                XDEBUG_ENABLE: '${XDEBUG_ENABLE:-false}'
+        volumes:
+            - .:/var/www/html
+        environment:
+            XDEBUG_ENABLE: '${XDEBUG_ENABLE:-false}'
+
+#    mysql:
+#        ports:
+#            - '${DB_PORT:-3306}:3306'
+
+#    testdb:
+#        image: mysql:8
+#        tmpfs: /var/lib/mysql

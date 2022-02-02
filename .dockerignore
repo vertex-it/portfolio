@@ -1,0 +1,9 @@
+.git/
+.idea/
+vendor/
+node_modules/
+.env
+.editorconfig
+*.md
+!README.md
+docker-compose.*
