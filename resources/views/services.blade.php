@@ -9,7 +9,7 @@
     ])
 
     <div class="py-16 overflow-hidden lg:py-24">
-        <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+        <div class="relative app-container">
 
             <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
                 <div class="relative">
@@ -177,79 +177,77 @@
         </div>
     </div>
 
-    <div class="">
-        <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-            <div class="mb-14 max-w-2xl mx-auto">
-                <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold text-center mb-2">Our tools</p>
-                <h2 class="tracking-wide text-4xl mb-4 font-bold text-gray-900 text-center">
-                    Technology stack
-                </h2>
-                <p class="text-gray-500 text-center">
-                    A proven combination of CMS systems, frameworks and front-end languages
-                </p>
-            </div>
-            <div class="grid grid-cols-1 gap-x-2 gap-y-16 sm:grid-cols-2 lg:mt-16 lg:grid-cols-6 lg:gap-x-2">
-                <div>
-                    <a href="laravel.html">
-                        <div class="h-20 w-20 mx-auto">
-                            <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                        </div>
-                        <div class="font-medium text-gray-600 mt-8 text-center">Laravel</div>
-                    </a>
-                </div>
-
-                <div>
-                    <div class="h-20 w-20 mx-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="">
-                    </div>
-                    <div class="font-medium text-gray-600 mt-8 text-center">Vue JS</div>
-                </div>
-
-                <div>
-                    <div class="h-20 w-20 mx-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="">
-                    </div>
-                    <div class="font-medium text-gray-600 mt-8 text-center">HTML</div>
-                </div>
-
-                <div>
-                    <div class="h-20 w-20 mx-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="">
-                    </div>
-                    <div class="font-medium text-gray-600 mt-8 text-center">JavaScript</div>
-                </div>
-
-                <div>
-                    <div class="h-20 w-20 mx-auto">
-                        <img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" alt="">
-                    </div>
-                    <div class="font-medium text-gray-600 mt-8 text-center">Docker</div>
-                </div>
-
-                <div>
-                    <div class="h-20 w-20 mx-auto">
-                        <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="">
-                    </div>
-                    <div class="font-medium text-gray-600 mt-8 text-center">Amazon Web Services</div>
-                </div>
-
-                <div>
-                    <div class="h-20 w-20 mx-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/PHP_Logo%2C_text_only.svg/2560px-PHP_Logo%2C_text_only.svg.png" alt="">
-                    </div>
-                    <div class="font-medium text-gray-600 mt-8 text-center">PHP</div>
-                </div>
-
-                <div>
-                    <div class="h-20 w-20 mx-auto">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="">
-                    </div>
-                    <div class="font-medium text-gray-600 mt-8 text-center">React</div>
-                </div>
-
-            </div>
+    <section class="app-container py-16 sm:pt-20 sm:pb-24 lg:pt-24">
+        <div class="mb-24">
+            <p class="landing-section-title-info text-center">Our tools</p>
+            <h2 class="landing-section-title text-center">
+                Technology stack
+            </h2>
+            <p class="landing-section-description text-center">
+                A proven combination of CMS systems, frameworks and front-end languages
+            </p>
         </div>
-    </div>
+        <div class="technology-stack-grid">
+            <div>
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div>
+
+            <div>
+                <div class="h-20 w-20 mx-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="">
+                </div>
+                <div class="font-medium text-gray-600 mt-8 text-center">Vue JS</div>
+            </div>
+
+            <div>
+                <div class="h-20 w-20 mx-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="">
+                </div>
+                <div class="font-medium text-gray-600 mt-8 text-center">HTML</div>
+            </div>
+
+            <div>
+                <div class="h-20 w-20 mx-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+                </div>
+                <div class="font-medium text-gray-600 mt-8 text-center">JavaScript</div>
+            </div>
+
+            <div>
+                <div class="h-20 w-20 mx-auto">
+                    <img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" alt="">
+                </div>
+                <div class="font-medium text-gray-600 mt-8 text-center">Docker</div>
+            </div>
+
+            <div>
+                <div class="h-20 w-20 mx-auto">
+                    <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="">
+                </div>
+                <div class="font-medium text-gray-600 mt-8 text-center">Amazon Web Services</div>
+            </div>
+
+            <div>
+                <div class="h-20 w-20 mx-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/PHP_Logo%2C_text_only.svg/2560px-PHP_Logo%2C_text_only.svg.png" alt="">
+                </div>
+                <div class="font-medium text-gray-600 mt-8 text-center">PHP</div>
+            </div>
+
+            <div>
+                <div class="h-20 w-20 mx-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="">
+                </div>
+                <div class="font-medium text-gray-600 mt-8 text-center">React</div>
+            </div>
+
+        </div>
+    </section>
 
     @include('components.cta')
 @endsection

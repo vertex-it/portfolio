@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="border-b border-gray-100 lg:h-screen">
-        <div class="flex flex-col justify-between h-full container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+        <div class="flex flex-col justify-between h-full app-container">
             @include('layouts.navigation')
             <section class="flex flex-wrap justify-between py-10">
                 <div
@@ -19,11 +19,7 @@
                         Innovative web applications tailor-made for your specific online business requirements.
                         From Bijeljina, Bosnia and Herzegovina.
                     </p>
-                    <a
-                        href="/"
-                        class="mx-auto md:mx-0 bg-red-500 font-semibold text-white text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600"
-                        title="Contact us"
-                    >
+                    <a href="{{ route('contact') }}" class="button-main" title="Contact us">
                         Contact us
                     </a>
                 </div>
@@ -38,7 +34,7 @@
                 </div>
             </section>
             <div class="pb-16">
-                <div class="max-w-2xl mx-auto px-4 grid grid-cols-1 gap-y-10 gap-x-12 lg:max-w-none lg:grid-cols-3">
+                <div class="max-w-2xl mx-auto grid grid-cols-1 gap-y-10 gap-x-12 lg:max-w-none lg:grid-cols-3">
                     <div class="sm:flex lg:block ">
                         <div class="sm:flex-shrink-0">
                             <div class="flow-root">
@@ -91,7 +87,7 @@
         </div>
     </div>
     <div class="bg-gradient-to-b from-gray-50 to-white border-b border-gray-100">
-        <div class="container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+        <div class="app-container">
             <section
                 class="py-20"
                 data-aos="fade-left"
@@ -100,11 +96,11 @@
                 <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
                     <div class="flex flex-col justify-center">
                         <div class="max-w-xl mb-6">
-                            <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Who we are</p>
-                            <h2 class="tracking-tight max-w-lg mb-8 text-4xl font-bold text-gray-900">
+                            <p class="landing-section-title-info">Who we are</p>
+                            <h2 class="landing-section-title">
                                 The quick, brown fox jumps over a lazy dog
                             </h2>
-                            <p class="text-gray-500 tracking-wide leading-relaxed">
+                            <p class="landing-section-description">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
                             </p>
                         </div>
@@ -243,17 +239,17 @@
                 data-aos="fade-down"
                 data-aos-duration="1200"
             >
-                <div class="mb-28 max-w-2xl mx-auto">
-                    <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Technology</p>
-                    <h2 class="text-center mb-4 text-4xl font-bold text-gray-900 tracking-tight">Our main technology stack</h2>
-                    <p class="text-gray-500 text-center tracking-wide leading-relaxed">
+                <div class="mb-24 max-w-2xl mx-auto">
+                    <p class="landing-section-title-info text-center">Technology</p>
+                    <h2 class="landing-section-title text-center">Our main technology stack</h2>
+                    <p class="landing-section-description text-center">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
                     </p>
                 </div>
-                <div class="grid gap-x-5 row-gap-5 lg:grid-cols-3">
+                <div class="main-technology-grid">
                     <a href="laravel.html">
                         <div
-                            class="p-12 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                            class="main-technology-card"
                             data-aos="zoom-out"
                             data-aos-duration="1000"
                         >
@@ -266,7 +262,7 @@
                     </a>
                     <a href="laravel.html">
                         <div
-                            class="p-12 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                            class="main-technology-card"
                             data-aos="zoom-out"
                             data-aos-duration="1000"
                             data-aos-delay="300"
@@ -280,7 +276,7 @@
                     </a>
                     <a href="laravel.html">
                         <div
-                            class="p-12 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 group hover:shadow-lg bg-white"
+                            class="main-technology-card"
                             data-aos="zoom-out"
                             data-aos-duration="1000"
                             data-aos-delay="600"
@@ -301,8 +297,8 @@
             >
                 <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
                     <div class="lg:py-6 lg:pr-16">
-                        <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2">Our process</p>
-                        <h2 class="tracking-tight text-4xl mb-10 font-bold text-gray-900">
+                        <p class="landing-section-title-info">Our process</p>
+                        <h2 class="landing-section-title mb-10">
                             Development process
                         </h2>
                         <div class="flex">
@@ -450,87 +446,85 @@
             </section>
         </div>
     </div>
-    <div class="portfolio-section border-b border-gray-100">
-        <div class="container px-4 mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
-            <section
-                class="py-20"
-            >
-                <div class="mb-24 max-w-2xl mx-auto">
-                    <span class="heading block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Case study</span>
-                    <h2 class="text-center mb-4 text-4xl font-bold text-gray-900 tracking-tight">What we did for our clients</h2>
-                    <p class="text-gray-500 text-center tracking-wide leading-relaxed">
-                        Learn about our latest success stories of web applications development, and how we helped our clients build and grow their businesses.
-                    </p>
+    <section class="portfolio-section border-b border-gray-100">
+        <div class="py-20 app-container">
+            <div class="mb-24 max-w-2xl mx-auto">
+                <span class="landing-section-title-info text-center">Case study</span>
+                <h2 class="landing-section-title text-center">What we did for our clients</h2>
+                <p class="landing-section-description text-center">
+                    Learn about our latest success stories of web applications development, and how we helped our clients build and grow their businesses.
+                </p>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://i.imgur.com/rk2qMPs.png"
+                        alt=""
+                    >
+                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Ordinacije.me</h6>-->
                 </div>
-                <div class="grid gap-8 lg:grid-cols-3">
-                    <div class="cursor-pointer hover:opacity-50">
-                        <img
-                            class="shadow-md rounded-xl w-full"
-                            src="https://i.imgur.com/rk2qMPs.png"
-                            alt=""
-                        >
-                        <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Ordinacije.me</h6>-->
-                    </div>
-                    <div class="cursor-pointer hover:opacity-50">
-                        <img
-                            class="shadow-md rounded-xl w-full"
-                            src="https://i.imgur.com/f1O2nmj.png"
-                            alt=""
-                        >
-                        <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Apoteke.me</h6>-->
-                    </div>
-                    <div class="cursor-pointer hover:opacity-50">
-                        <img
-                            class="shadow-md rounded-xl w-full"
-                            src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
-                            alt=""
-                        >
-                        <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Pedigres</h6>-->
-                    </div>
-                    <div class="cursor-pointer hover:opacity-50">
-                        <img
-                            class="shadow-md rounded-xl w-full"
-                            src="https://i.imgur.com/QQVCyHP.png"
-                            alt=""
-                        >
-                        <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Neuroprima</h6>-->
-                    </div>
-                    <div class="cursor-pointer hover:opacity-50">
-                        <img
-                            class="shadow-md rounded-xl w-full"
-                            src="https://i.imgur.com/w4rCSLo.png"
-                            alt=""
-                        >
-                        <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Aspirano</h6>-->
-                    </div>
-                    <div class="cursor-pointer hover:opacity-50">
-                        <img
-                            class="shadow-md rounded-xl w-full"
-                            src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
-                            alt=""
-                        >
-                        <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Racuni.me</h6>-->
-                    </div>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://i.imgur.com/f1O2nmj.png"
+                        alt=""
+                    >
+                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Apoteke.me</h6>-->
                 </div>
-            </section>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
+                        alt=""
+                    >
+                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Pedigres</h6>-->
+                </div>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://i.imgur.com/QQVCyHP.png"
+                        alt=""
+                    >
+                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Neuroprima</h6>-->
+                </div>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://i.imgur.com/w4rCSLo.png"
+                        alt=""
+                    >
+                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Aspirano</h6>-->
+                </div>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/DemoTemplate5_Home.jpg"
+                        alt=""
+                    >
+                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Racuni.me</h6>-->
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
     <section class="border-b border-gray-100">
         <div class="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col">
-            <div class="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
+            <div class="app-container lg:py-20">
                 <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
-                    <p class="heading uppercase tracking-widest text-gray-400 text-xs text-red-500 text-center font-bold mb-2">Code guidelines</p>
-                    <h2 class="mb-5 font-bold text-4xl text-center text-gray-800 tracking-tight">
+                    <p class="landing-section-title-info text-center">Code guidelines</p>
+                    <h2 class="landing-section-title text-center">
                         Our official coding guidelines
                     </h2>
-                    <p class="mb-10 text-gray-500 text-center tracking-wide leading-relaxed">
+                    <p class="landing-section-description text-center mb-10">
                         Our projects are never done by one person. To keep consistency in the development and maintenance of our projects, we introduced coding guidelines to our company.
                     </p>
                     <div class="text-center">
                         <a
                             href="https://guidelines.vertex-it.com"
                             target="_blank"
-                            class="bg-red-500 font-semibold text-white rounded py-3 px-8 transition-colors duration-200 hover:bg-red-600"
+{{--                            class="bg-red-500 font-semibold text-white rounded py-3 px-8 transition-colors duration-200 hover:bg-red-600"--}}
+                            class="button-main"
                         >
                             Go to Guidelines
                         </a>
@@ -548,14 +542,16 @@
     </section>
 
     <section class="bg-white overflow-hidden my-32">
-        <div class="mb-24 max-w-2xl mx-auto">
-            <span class="heading block uppercase tracking-widest text-gray-400 text-xs text-red-500 font-bold mb-2 text-center">Testimonials</span>
-            <h2 class="text-center mb-4 text-4xl font-bold text-gray-900 tracking-tight">Naslov</h2>
-            <p class="text-gray-500 text-center tracking-wide leading-relaxed">
+        <div class="mb-16 app-container">
+            <span class="landing-section-title-info text-center">Testimonials</span>
+            <h2 class="landing-section-title text-center">
+                What clients are saying about us
+            </h2>
+            <p class="landing-section-description text-center">
                 Opis
             </p>
         </div>
-        <div class="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20">
+        <div class="relative pt-20 pb-12 app-container">
             <svg class="absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
                 <defs>
                     <pattern id="e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">

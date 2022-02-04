@@ -8,7 +8,7 @@
 
         <link rel="icon" href="{{ asset('favicon.ico') }}">
 
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
                 font-family: 'Poppins', serif;
             }
 
-            .heading {
+            .landing-section-title-info {
                 font-family: 'Architects Daughter', serif;
             }
 

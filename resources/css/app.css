@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .app-container {
+        @apply container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl;
+    }
+    .button-main {
+        @apply mx-auto md:mx-0 bg-red-500 font-semibold text-white text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600;
+    }
+    .landing-section-title-info {
+        @apply block uppercase tracking-widest text-xs text-red-500 font-bold mb-2;
+    }
+    .landing-section-title {
+        @apply mb-4 text-4xl font-bold text-gray-900 tracking-tight;
+    }
+    .landing-section-description {
+        @apply text-gray-500 tracking-wide leading-relaxed;
+    }
+    .page-main-title {
+        @apply tracking-tight text-5xl mb-8 font-bold text-gray-900 text-center;
+    }
+    .page-main-description {
+        @apply text-gray-500 tracking-wide leading-relaxed text-center text-lg;
+    }
+
+    .main-technology-grid {
+        @apply grid gap-x-5 lg:grid-cols-3;
+    }
+    .main-technology-card {
+        @apply px-12 py-14 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 hover:shadow-lg bg-white;
+    }
+
+    .technology-stack-grid {
+        @apply grid grid-cols-1 gap-x-2 gap-y-20 sm:grid-cols-2 lg:mt-16 lg:grid-cols-6 lg:gap-x-2 -mx-16;
+    }
+    .technology-image {
+        @apply h-20 w-20 mx-auto;
+    }
+    .technology-name {
+        @apply font-medium text-gray-600 mt-8 text-center;
+    }
+
+    .project-div {
+        @apply relative bg-white shadow rounded-lg border border-gray-200 overflow-auto;
+    }
+    .project-title {
+        @apply tracking-tight text-2xl font-semibold text-gray-900 sm:text-3xl;
+    }
+    .project-description {
+        @apply text-gray-500 mt-7 leading-7;
+    }
+    .project-button {
+        @apply bg-white font-medium text-red-500 border-2 border-red-500 rounded py-2 px-10 text-sm transition-colors duration-200 hover:bg-red-100;
+    }
+}

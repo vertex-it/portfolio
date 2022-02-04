@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="bg-gray-50">
-        <div class="container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+        <div class="app-container">
             @include('layouts.navigation')
         </div>
     </div>
@@ -12,7 +12,7 @@
     <main class="overflow-hidden">
         <div class="bg-gray-50">
             <div class="py-24 lg:py-32">
-                <div class="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
+                <div class="app-container relative z-10">
                     <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Get in touch</h1>
                     <p class="mt-6 text-lg text-gray-500 max-w-3xl">Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum urna ut volutpat. Sagittis et vel et fermentum amet consequat.</p>
                 </div>
@@ -23,7 +23,7 @@
         <section class="relative bg-white" aria-labelledby="contact-heading">
             <div class="absolute w-full h-1/2 bg-gray-50" aria-hidden="true"></div>
             <!-- Decorative dot pattern -->
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative app-container">
                 <svg class="absolute z-0 top-0 right-0 transform -translate-y-16 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
                     <defs>
                         <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -33,7 +33,7 @@
                     <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
                 </svg>
             </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="app-container">
                 <div class="relative bg-white shadow-xl">
                     <h2 id="contact-heading" class="sr-only">Contact us</h2>
 
@@ -175,7 +175,7 @@
                                     </div>
                                 </div>
                                 <div class="sm:col-span-2 sm:flex sm:justify-end">
-                                    <button type="submit" class="mt-2 bg-red-500 font-semibold text-white text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600">
+                                    <button type="submit" class="button-main mt-2">
                                         Submit
                                     </button>
                                 </div>
@@ -188,7 +188,7 @@
 
         <!-- Contact grid -->
         <section aria-labelledby="offices-heading">
-            <div class="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div class="app-container py-24 sm:py-32">
                 <h2 id="offices-heading" class="text-3xl font-extrabold text-gray-900">Our offices</h2>
                 <p class="mt-6 text-lg text-gray-500 max-w-3xl">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
                 <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">

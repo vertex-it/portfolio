@@ -18,7 +18,12 @@ class PagesController extends Controller
 
     public function projects()
     {
-        return view('projects');
+        return view('project-index');
+    }
+
+    public function project()
+    {
+        return view('project-show');
     }
 
     public function contact()
