@@ -1,10 +1,6 @@
 <header class="flex flex-wrap items-center justify-between py-4 md:py-8">
-    <a href="/" aria-label="Vertex IT" title="Vertex IT">
-        <img
-            src="{{ asset('img/logo.svg') }}"
-            class="h-7"
-            alt="Vertex IT logo"
-        >
+    <a href="{{ route('landing') }}" aria-label="Vertex IT" title="Vertex IT">
+        <img src="{{ asset('img/logo.svg') }}" class="h-7" alt="Vertex IT logo">
     </a>
     <div class="flex md:hidden">
         <button class="p-1 text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500" id="hamburger">
@@ -26,30 +22,28 @@
             </svg>
         </button>
     </div>
-    <nav class="toggle hidden md:flex w-full md:w-auto md:space-x-8 mt-4 md:mt-0 tracking-tighter">
+    <nav class="navigation toggle">
         <a
-            href="{{ route('landing') }}" aria-label="Our product" title="Our product"
-            class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-600 @if(Route::currentRouteName() === 'landing') text-red-500 font-semibold  @endif"
+            href="{{ route('landing') }}"
+            class="navigation-item @if(Route::currentRouteName() === 'landing') active  @endif"
         >
             Home
         </a>
         <a
             href="{{ route('services') }}"
-            aria-label="Our services"
-            title="Our services"
-            class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500 @if(Route::currentRouteName() === 'services') text-red-500 font-semibold  @endif"
+            class="navigation-item @if(Route::currentRouteName() === 'services') active  @endif"
         >
             Services
         </a>
         <a
-            href="{{ route('projects') }}" aria-label="Product pricing" title="Product pricing"
-            class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500 @if(Route::currentRouteName() === 'projects') text-red-500 font-semibold  @endif"
+            href="{{ route('projects') }}"
+            class="navigation-item @if(Route::currentRouteName() === 'projects' || Request::is('projects/*')) active  @endif"
         >
             Our work
         </a>
         <a
-            href="{{ route('contact') }}" aria-label="Product pricing" title="Product pricing"
-            class="block md:inline-block py-3 text-center text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-500 @if(Route::currentRouteName() === 'contact') text-red-500 font-semibold  @endif"
+            href="{{ route('contact') }}"
+            class="navigation-item @if(Route::currentRouteName() === 'contact') active  @endif"
         >
             Contact us
         </a>

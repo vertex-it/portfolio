@@ -38,8 +38,8 @@
         </div>
     </div>
     <div class="py-8 border-t border-gray-150">
-        <p class="text-base text-gray-400 xl:text-center">
-            &copy; 2021 {{ config('app.name') }}
+        <p class="text-gray-500 text-center">
+            &copy; {{ now()->year }} {{ config('app.name') }}
         </p>
     </div>
 </footer>
