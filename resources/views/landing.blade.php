@@ -547,9 +547,6 @@
             <h2 class="landing-section-title text-center">
                 What clients are saying about us
             </h2>
-            <p class="landing-section-description text-center">
-                Opis
-            </p>
         </div>
         <div class="relative pt-20 pb-12 app-container">
             <svg class="absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
