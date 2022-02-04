@@ -1,6 +1,20 @@
+@import "~aos/dist/aos.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    font-family: 'Poppins', serif;
+}
+
+.landing-section-title-info {
+    font-family: 'Architects Daughter', serif;
+}
 
 @layer components {
     .app-container {
