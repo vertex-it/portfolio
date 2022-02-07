@@ -13,8 +13,15 @@ services:
 
     mysql:
         ports:
-            - '${DB_PORT:-3306}:3306'
+            - '${FORWARD_DB_PORT:-3306}:3306'
 
 #    testdb:
 #        image: mysql:8
 #        tmpfs: /var/lib/mysql
+
+    localtunnel:
+        image: efrecon/localtunnel
+        command:
+            --local-host app --port 80 --subdomain vertex-it-localhost
+        depends_on:
+            - app

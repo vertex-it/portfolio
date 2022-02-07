@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 
     .button-main {
-        @apply mx-auto md:mx-0 bg-red-500 font-semibold text-white text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600;
+        @apply mx-auto lg:mx-0 bg-red-500 font-semibold text-white text-base md:text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600;
     }
 
     .navigation {
@@ -39,45 +39,75 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         @apply block uppercase tracking-widest text-xs text-red-500 font-bold mb-2;
     }
     .landing-section-title {
-        @apply mb-4 text-4xl font-bold text-gray-900 tracking-tight;
+        @apply mb-4 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight;
     }
     .landing-section-description {
-        @apply text-gray-500 tracking-wide leading-relaxed;
+        @apply text-gray-500 tracking-wide leading-relaxed text-xs sm:text-sm md:text-base;
     }
     .page-main-title {
-        @apply tracking-tight text-5xl mb-8 font-bold text-gray-900 text-center;
+        @apply tracking-tight text-3xl md:text-4xl xl:text-5xl mb-8 font-bold text-gray-900 text-center;
     }
     .page-main-description {
-        @apply text-gray-500 tracking-wide leading-relaxed text-center text-lg;
+        @apply text-gray-500 tracking-wide leading-relaxed text-center text-sm md:text-base xl:text-lg;
     }
 
     .main-technology-grid {
         @apply grid gap-x-5 lg:grid-cols-3;
     }
     .main-technology-card {
-        @apply px-12 py-14 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 hover:shadow-lg bg-white;
+        @apply px-12 py-14 mb-4 md:mb-0 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 hover:shadow-lg bg-white;
+    }
+    .main-technology-name {
+        @apply font-medium text-lg md:text-xl lg:text-2xl mb-5 mt-12;
+    }
+    .main-technology-description {
+        @apply text-gray-500 text-xs md:text-sm leading-relaxed tracking-wide;
     }
 
     .technology-stack-grid {
-        @apply grid grid-cols-1 gap-x-2 gap-y-20 sm:grid-cols-2 lg:mt-16 lg:grid-cols-6 lg:gap-x-2 -mx-16;
+        @apply flex flex-wrap justify-around md:justify-start -mx-4 md:-mx-10;
+    }
+    .technology-item {
+        @apply px-4 md:px-12 py-8;
     }
     .technology-image {
-        @apply h-20 w-20 mx-auto;
+        @apply h-12 md:h-20 w-12 md:w-20 mx-auto;
     }
     .technology-name {
-        @apply font-medium text-gray-600 mt-8 text-center;
+        @apply font-medium text-gray-600 mt-6 md:mt-7 text-center text-sm md:text-base;
     }
 
     .project-div {
         @apply relative bg-white shadow rounded-lg border border-gray-200 overflow-auto;
     }
     .project-title {
-        @apply tracking-tight text-2xl font-semibold text-gray-900 sm:text-3xl;
+        @apply tracking-tight text-xl md:text-2xl font-semibold text-gray-900 sm:text-3xl;
     }
     .project-description {
-        @apply text-gray-500 mt-7 leading-7;
+        @apply text-gray-500 mt-5 sm:mt-6 md:mt-7 text-sm md:text-base leading-6 md:leading-7;
     }
     .project-button {
-        @apply bg-white font-medium text-red-500 border-2 border-red-500 rounded py-2 px-10 text-sm transition-colors duration-200 hover:bg-red-100;
+        @apply bg-white text-xs md:text-sm font-medium text-red-500 border-2 border-red-500 rounded py-2 px-10 transition-colors duration-200 hover:bg-red-100;
+    }
+
+    .landing-hero-slogan {
+        @apply lg:leading-tight tracking-tight text-center lg:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5 lg:mb-7;
+    }
+    .landing-hero-description {
+        @apply text-center lg:text-left text-sm md:text-base xl:text-lg xl:leading-7 mb-4 lg:mb-7 text-gray-600;
+    }
+
+    .footer-group {
+        @apply leading-6 md:leading-8;
+    }
+    .footer-item {
+        @apply text-gray-600 text-sm md:text-base pb-2;
+    }
+
+    .dev-process-title {
+        @apply mb-2 text-base md:text-lg font-medium;
+    }
+    .dev-process-description {
+        @apply text-gray-500 text-xs md:text-sm;
     }
 }

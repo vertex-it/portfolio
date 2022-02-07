@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <div class="relative pb-16 sm:pb-24">
+    <div class="relative pb-4 sm:pb-24">
         <div class="app-container">
             @include('layouts.navigation')
         </div>

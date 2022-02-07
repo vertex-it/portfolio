@@ -8,7 +8,7 @@
         'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.'
     ])
 
-    <div class="py-16 overflow-hidden lg:py-24">
+    <div class="py-12 md:py-16 overflow-hidden lg:py-24">
         <div class="relative app-container">
 
             <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
@@ -177,8 +177,8 @@
         </div>
     </div>
 
-    <section class="app-container py-16 sm:pt-20 sm:pb-24 lg:pt-24">
-        <div class="mb-24">
+    <section class="app-container py-12 md:py-24">
+        <div class="mb-10 md:mb-24">
             <p class="landing-section-title-info text-center">Our tools</p>
             <h2 class="landing-section-title text-center">
                 Technology stack
@@ -188,7 +188,7 @@
             </p>
         </div>
         <div class="technology-stack-grid">
-            <div>
+            <div class="technology-item">
                 <a href="laravel.html">
                     <div class="technology-image">
                         <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
@@ -197,54 +197,70 @@
                 </a>
             </div>
 
-            <div>
-                <div class="h-20 w-20 mx-auto">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="">
-                </div>
-                <div class="font-medium text-gray-600 mt-8 text-center">Vue JS</div>
+            <div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div>
+            <div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div>
+            <div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div>
+            <div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div>
+            <div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div>
+            <div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div>
+            <div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
+            </div><div class="technology-item">
+                <a href="laravel.html">
+                    <div class="technology-image">
+                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                    </div>
+                    <div class="technology-name">Laravel</div>
+                </a>
             </div>
 
-            <div>
-                <div class="h-20 w-20 mx-auto">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="">
-                </div>
-                <div class="font-medium text-gray-600 mt-8 text-center">HTML</div>
-            </div>
-
-            <div>
-                <div class="h-20 w-20 mx-auto">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="">
-                </div>
-                <div class="font-medium text-gray-600 mt-8 text-center">JavaScript</div>
-            </div>
-
-            <div>
-                <div class="h-20 w-20 mx-auto">
-                    <img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" alt="">
-                </div>
-                <div class="font-medium text-gray-600 mt-8 text-center">Docker</div>
-            </div>
-
-            <div>
-                <div class="h-20 w-20 mx-auto">
-                    <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="">
-                </div>
-                <div class="font-medium text-gray-600 mt-8 text-center">Amazon Web Services</div>
-            </div>
-
-            <div>
-                <div class="h-20 w-20 mx-auto">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/PHP_Logo%2C_text_only.svg/2560px-PHP_Logo%2C_text_only.svg.png" alt="">
-                </div>
-                <div class="font-medium text-gray-600 mt-8 text-center">PHP</div>
-            </div>
-
-            <div>
-                <div class="h-20 w-20 mx-auto">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="">
-                </div>
-                <div class="font-medium text-gray-600 mt-8 text-center">React</div>
-            </div>
 
         </div>
     </section>

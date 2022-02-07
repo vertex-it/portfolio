@@ -6,16 +6,16 @@
     <div class="border-b border-gray-100 lg:h-screen">
         <div class="flex flex-col justify-between h-full app-container">
             @include('layouts.navigation')
-            <section class="flex flex-wrap justify-between py-10">
+            <section class="flex flex-wrap justify-between my-14 lg:my-0">
                 <div
-                    class="w-full md:w-1/2 order-2 md:order-1 flex flex-col justify-center md:items-start mb-16 md:mb-0 md:pr-10"
+                    class="w-full lg:w-1/2 max-w-2xl lg:max-w-full mx-auto order-2 lg:order-1 flex flex-col justify-center lg:items-start lg:pr-10"
                     data-aos="fade-down"
                     data-aos-duration="1300"
                 >
-                    <h1 class="lg:leading-tight tracking-tight text-center md:text-left text-4xl lg:text-5xl font-bold text-gray-900 mb-5 lg:mb-7">
+                    <h1 class="landing-hero-slogan">
                         Full-cycle web <span class="text-red-500 h1">development company</span>
                     </h1>
-                    <p class="text-center md:text-left text-lg mb-7 text-gray-600 leading-7">
+                    <p class="landing-hero-description">
                         Innovative web applications tailor-made for your specific online business requirements.
                         From Bijeljina, Bosnia and Herzegovina.
                     </p>
@@ -23,9 +23,9 @@
                         Contact us
                     </a>
                 </div>
-                <div class="w-full md:w-1/2 order-1 md:order-2 md:pl-20 mb-10 md:mb-0">
+                <div class="w-full lg:w-1/2 order-1 lg:order-2 lg:pl-20 mb-10 lg:mb-0">
                     <img
-                        class="w-2/3 md:w-full mx-auto max-w-72 md:max-w-full max-h-72 md:max-h-full"
+                        class="w-2/3 lg:w-full mx-auto max-w-72 lg:max-w-full max-h-72 lg:max-h-full"
                         alt="hero"
                         src="{{ asset('img/hero.svg') }}"
                         data-aos="fade-left"
@@ -235,11 +235,11 @@
                 </div>
             </section>
             <section
-                class="my-20"
+                class="my-6 md:my-20"
                 data-aos="fade-down"
                 data-aos-duration="1200"
             >
-                <div class="mb-24 max-w-2xl mx-auto">
+                <div class="mb-6 md:mb-24 max-w-2xl mx-auto">
                     <p class="landing-section-title-info text-center">Technology</p>
                     <h2 class="landing-section-title text-center">Our main technology stack</h2>
                     <p class="landing-section-description text-center">
@@ -253,9 +253,9 @@
                             data-aos="zoom-out"
                             data-aos-duration="1000"
                         >
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="mx-auto h-20" alt="">
-                            <div class="font-medium text-2xl mb-5 mt-12">Laravel</div>
-                            <p class="text-gray-500 text-sm leading-relaxed tracking-wide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="mx-auto h-24 md:h-20" alt="">
+                            <div class="main-technology-name">Laravel</div>
+                            <p class="main-technology-description">
                                 Web application framework with expressive, elegant syntax.
                             </p>
                         </div>
@@ -267,9 +267,9 @@
                             data-aos-duration="1000"
                             data-aos-delay="300"
                         >
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" class="mx-auto h-20" alt="">
-                            <div class="font-medium text-2xl mb-5 mt-12">Vue JS</div>
-                            <p class="text-gray-500 text-sm leading-relaxed tracking-wide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" class="mx-auto h-24 md:h-20" alt="">
+                            <div class="main-technology-name">Vue JS</div>
+                            <p class="main-technology-description">
                                 Progressive framework for building user interfaces.
                             </p>
                         </div>
@@ -281,9 +281,9 @@
                             data-aos-duration="1000"
                             data-aos-delay="600"
                         >
-                            <img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" class="mx-auto h-20" alt="">
-                            <div class="font-medium text-2xl mb-5 mt-12">Docker</div>
-                            <p class="text-gray-500 text-sm leading-relaxed tracking-wide">
+                            <img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" class="mx-auto h-24 md:h-20" alt="">
+                            <div class="main-technology-name">Docker</div>
+                            <p class="main-technology-description">
                                 Open platform for developing, shipping, and running applications.
                             </p>
                         </div>
@@ -291,7 +291,7 @@
                 </div>
             </section>
             <section
-                class="my-32"
+                class="my-10 md:my-32"
                 data-aos="fade-right"
                 data-aos-duration="1200"
             >
@@ -332,8 +332,8 @@
                                 <div class="w-px h-full bg-gray-300"></div>
                             </div>
                             <div class="pt-1 pb-8">
-                                <p class="mb-2 text-lg">Planning and design</p>
-                                <p class="text-gray-500 text-sm">
+                                <p class="dev-process-title">Planning and design</p>
+                                <p class="dev-process-description">
                                     All recipes are written using certain conventions, which define the characteristics of common ingredients. The rules vary from place to place.
                                 </p>
                             </div>
@@ -369,8 +369,8 @@
                                 <div class="w-px h-full bg-gray-300"></div>
                             </div>
                             <div class="pt-1 pb-8">
-                                <p class="mb-2 text-lg">Development</p>
-                                <p class="text-gray-500 text-sm">
+                                <p class="dev-process-title">Development</p>
+                                <p class="dev-process-description">
                                     The first mate and his Skipper too will do their very best to make the others comfortable in their tropic island nest. Michael Knight a young loner.
                                 </p>
                             </div>
@@ -406,8 +406,8 @@
                                 <div class="w-px h-full bg-gray-300"></div>
                             </div>
                             <div class="pt-1 pb-8">
-                                <p class="mb-2 text-lg">Testing</p>
-                                <p class="text-gray-500 text-sm">
+                                <p class="dev-process-title">Testing</p>
+                                <p class="dev-process-description">
                                     Tell them I hate them. Is the Space Pope reptilian!? Tell her she looks thin. Hello, little man. I will destroy you!
                                 </p>
                             </div>
@@ -430,8 +430,8 @@
                                 </div>
                             </div>
                             <div class="pt-1">
-                                <p class="mb-2 text-lg">Deliver the project</p>
-                                <p class="text-gray-500 text-sm"></p>
+                                <p class="dev-process-title">Deliver the project</p>
+                                <p class="dev-process-description"></p>
                             </div>
                         </div>
                     </div>
@@ -447,8 +447,8 @@
         </div>
     </div>
     <section class="portfolio-section border-b border-gray-100">
-        <div class="py-20 app-container">
-            <div class="mb-24 max-w-2xl mx-auto">
+        <div class="py-12 md:py-20 app-container">
+            <div class="mb-14 md:mb-24 max-w-2xl mx-auto">
                 <span class="landing-section-title-info text-center">Case study</span>
                 <h2 class="landing-section-title text-center">What we did for our clients</h2>
                 <p class="landing-section-description text-center">
@@ -509,7 +509,7 @@
     </section>
 
     <section class="border-b border-gray-100">
-        <div class="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col">
+        <div class="relative flex flex-col-reverse py-12 lg:py-0 lg:flex-col">
             <div class="app-container lg:py-20">
                 <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
                     <p class="landing-section-title-info text-center">Code guidelines</p>
@@ -541,14 +541,14 @@
         </div>
     </section>
 
-    <section class="bg-white overflow-hidden my-32">
-        <div class="mb-16 app-container">
+    <section class="bg-white overflow-hidden my-12 md:my-32">
+        <div class="mb-6 md:mb-16 app-container">
             <span class="landing-section-title-info text-center">Testimonials</span>
             <h2 class="landing-section-title text-center">
                 What clients are saying about us
             </h2>
         </div>
-        <div class="relative pt-20 pb-12 app-container">
+        <div class="relative pt-8 md:pt-20 pb-4 md:pb-12 app-container">
             <svg class="absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
                 <defs>
                     <pattern id="e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -577,7 +577,7 @@
                         <path stroke-width="2" d="M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z" />
                     </svg>
                     <blockquote class="relative">
-                        <div class="text-2xl leading-9 text-gray-700">
+                        <div class="text-base md:text-xl xl:text-2xl leading-7 md:leading-9 text-gray-700">
                             <p>
                                 Since having our new website built by <span class="text-red-500 font-medium">Vertex IT</span>, we have seen a 200% increase in the number of online contact forms being filled out and returned to us. Matt and his team worked closely with us to provide a site that met all of the criteria that we were looking for. Thanks to Thrive for all of your hard work and support!
                             </p>
