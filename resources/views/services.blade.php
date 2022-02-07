@@ -8,7 +8,7 @@
         'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.'
     ])
 
-    <div class="py-12 md:py-16 overflow-hidden lg:py-24">
+    <div class="py-12 lg:py-16 overflow-hidden lg:py-24">
         <div class="relative app-container">
 
             <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
@@ -177,8 +177,8 @@
         </div>
     </div>
 
-    <section class="app-container py-12 md:py-24">
-        <div class="mb-10 md:mb-24">
+    <section class="app-container py-12 lg:py-24">
+        <div class="mb-10 lg:mb-24">
             <p class="landing-section-title-info text-center">Our tools</p>
             <h2 class="landing-section-title text-center">
                 Technology stack

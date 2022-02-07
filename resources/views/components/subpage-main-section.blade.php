@@ -20,12 +20,12 @@
         </div>
     </div>
 
-    <div class="relative pb-4 sm:pb-24">
+    <div class="relative pb-4 lg:pb-24">
         <div class="app-container">
             @include('layouts.navigation')
         </div>
 
-        <main class="app-container mt-16 sm:mt-24">
+        <main class="app-container mt-16 lg:mt-24">
 
             <div class="mb-10 max-w-2xl mx-auto">
                 @if (isset($breadcrumbs))

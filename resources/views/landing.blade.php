@@ -235,11 +235,11 @@
                 </div>
             </section>
             <section
-                class="my-6 md:my-20"
+                class="my-6 lg:my-20"
                 data-aos="fade-down"
                 data-aos-duration="1200"
             >
-                <div class="mb-6 md:mb-24 max-w-2xl mx-auto">
+                <div class="mb-6 lg:mb-24 max-w-2xl mx-auto">
                     <p class="landing-section-title-info text-center">Technology</p>
                     <h2 class="landing-section-title text-center">Our main technology stack</h2>
                     <p class="landing-section-description text-center">
@@ -291,7 +291,7 @@
                 </div>
             </section>
             <section
-                class="my-10 md:my-32"
+                class="my-10 lg:my-32"
                 data-aos="fade-right"
                 data-aos-duration="1200"
             >
@@ -447,8 +447,8 @@
         </div>
     </div>
     <section class="portfolio-section border-b border-gray-100">
-        <div class="py-12 md:py-20 app-container">
-            <div class="mb-14 md:mb-24 max-w-2xl mx-auto">
+        <div class="py-12 lg:py-20 app-container">
+            <div class="mb-14 lg:mb-24 max-w-2xl mx-auto">
                 <span class="landing-section-title-info text-center">Case study</span>
                 <h2 class="landing-section-title text-center">What we did for our clients</h2>
                 <p class="landing-section-description text-center">
@@ -541,14 +541,14 @@
         </div>
     </section>
 
-    <section class="bg-white overflow-hidden my-12 md:my-32">
-        <div class="mb-6 md:mb-16 app-container">
+    <section class="bg-white overflow-hidden my-12 lg:my-32">
+        <div class="mb-6 lg:mb-16 app-container">
             <span class="landing-section-title-info text-center">Testimonials</span>
             <h2 class="landing-section-title text-center">
                 What clients are saying about us
             </h2>
         </div>
-        <div class="relative pt-8 md:pt-20 pb-4 md:pb-12 app-container">
+        <div class="relative pt-8 lg:pt-20 pb-4 lg:pb-12 app-container">
             <svg class="absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
                 <defs>
                     <pattern id="e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -577,7 +577,7 @@
                         <path stroke-width="2" d="M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z" />
                     </svg>
                     <blockquote class="relative">
-                        <div class="text-base md:text-xl xl:text-2xl leading-7 md:leading-9 text-gray-700">
+                        <div class="text-base lg:text-xl xl:text-2xl leading-7 lg:leading-9 text-gray-700">
                             <p>
                                 Since having our new website built by <span class="text-red-500 font-medium">Vertex IT</span>, we have seen a 200% increase in the number of online contact forms being filled out and returned to us. Matt and his team worked closely with us to provide a site that met all of the criteria that we were looking for. Thanks to Thrive for all of your hard work and support!
                             </p>

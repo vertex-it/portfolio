@@ -30,11 +30,7 @@
     <body>
         @yield('content')
 
-        @if (isset($darkFooter))
-            @include('layouts.footer-dark')
-        @else
-            @include('layouts.footer')
-        @endif
+        @include('layouts.footer')
 
         <script>
             document.getElementById('hamburger').onclick = function toggleMenu() {

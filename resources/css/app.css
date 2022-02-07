@@ -18,18 +18,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 @layer components {
     .app-container {
-        @apply container mx-auto max-w-md sm:max-w-xl md:max-w-full lg:max-w-screen-xl px-4;
+        @apply container mx-auto max-w-md sm:max-w-xl lg:max-w-full xl:max-w-screen-xl px-4;
     }
 
     .button-main {
-        @apply mx-auto lg:mx-0 bg-red-500 font-semibold text-white text-base md:text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600;
+        @apply mx-auto lg:mx-0 bg-red-500 font-semibold text-white text-sm md:text-base lg:text-lg rounded py-2 px-10 transition-colors duration-200 hover:bg-red-600;
     }
 
     .navigation {
-        @apply hidden md:flex w-full md:w-auto md:space-x-8 mt-4 md:mt-0;
+        @apply hidden lg:flex w-full md:w-auto md:space-x-8 mt-4 md:mt-0;
     }
     .navigation-item {
-        @apply block md:inline-block py-3 text-center tracking-tight text-lg md:text-left md:py-0 border-b border-gray-200 md:border-0 text-gray-900 transition-colors duration-200 hover:text-red-600;
+        @apply block lg:inline-block py-3 text-center tracking-tight text-lg lg:text-left lg:py-0 border-b border-gray-200 lg:border-0 text-gray-900 transition-colors duration-200 hover:text-red-600;
     }
     .navigation-item.active {
         @apply text-red-500 font-medium;
@@ -39,10 +39,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         @apply block uppercase tracking-widest text-xs text-red-500 font-bold mb-2;
     }
     .landing-section-title {
-        @apply mb-4 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight;
+        @apply mb-4 text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight;
     }
     .landing-section-description {
-        @apply text-gray-500 tracking-wide leading-relaxed text-xs sm:text-sm md:text-base;
+        @apply text-gray-500 tracking-wide leading-relaxed text-xs md:text-sm lg:text-base;
     }
     .page-main-title {
         @apply tracking-tight text-3xl md:text-4xl xl:text-5xl mb-8 font-bold text-gray-900 text-center;
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         @apply grid gap-x-5 lg:grid-cols-3;
     }
     .main-technology-card {
-        @apply px-12 py-14 mb-4 md:mb-0 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 hover:shadow-lg bg-white;
+        @apply px-12 py-14 mb-4 lg:mb-0 border border-gray-100 text-center overflow-hidden transition duration-300 transform shadow-md rounded-xl hover:scale-105 hover:shadow-lg bg-white;
     }
     .main-technology-name {
         @apply font-medium text-lg md:text-xl lg:text-2xl mb-5 mt-12;
@@ -65,16 +65,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 
     .technology-stack-grid {
-        @apply flex flex-wrap justify-around md:justify-start -mx-4 md:-mx-10;
+        @apply flex flex-wrap justify-around lg:justify-start -mx-4 lg:-mx-10;
     }
     .technology-item {
-        @apply px-4 md:px-12 py-8;
+        @apply px-4 lg:px-12 py-8;
     }
     .technology-image {
-        @apply h-12 md:h-20 w-12 md:w-20 mx-auto;
+        @apply h-12 lg:h-20 w-12 lg:w-20 mx-auto;
     }
     .technology-name {
-        @apply font-medium text-gray-600 mt-6 md:mt-7 text-center text-sm md:text-base;
+        @apply font-medium text-gray-600 mt-6 lg:mt-7 text-center text-sm md:text-base;
     }
 
     .project-div {

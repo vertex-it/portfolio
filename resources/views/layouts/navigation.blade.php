@@ -1,8 +1,8 @@
-<header class="flex flex-wrap items-center justify-between py-4 md:py-8">
+<header class="flex flex-wrap items-center justify-between py-4 lg:py-8">
     <a href="{{ route('landing') }}" aria-label="Vertex IT" title="Vertex IT">
-        <img src="{{ asset('img/logo.svg') }}" class="h-5 sm:h-6 md:h-7" alt="Vertex IT logo">
+        <img src="{{ asset('img/logo.svg') }}" class="h-5 md:h-6 lg:h-7" alt="Vertex IT logo">
     </a>
-    <div class="flex md:hidden">
+    <div class="flex lg:hidden">
         <button class="p-1 text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500" id="hamburger">
             <svg
                 width="20"

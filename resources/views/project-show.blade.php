@@ -1,4 +1,4 @@
-@extends('layouts.master', ['darkFooter'=> true])
+@extends('layouts.master')
 
 @section('title', 'Single project')
 

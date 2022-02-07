@@ -1,4 +1,4 @@
-@extends('layouts.master', ['darkFooter' => true])
+@extends('layouts.master')
 
 @section('title', 'Contact Us')
 
@@ -11,16 +11,16 @@
 
     <main class="overflow-hidden">
         <div class="bg-gray-50">
-            <div class="py-24 lg:py-32">
+            <div class="py-12 md:py-20 lg:py-24">
                 <div class="app-container relative z-10">
-                    <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Get in touch</h1>
-                    <p class="mt-6 text-lg text-gray-500 max-w-3xl">Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum urna ut volutpat. Sagittis et vel et fermentum amet consequat.</p>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">Get in touch</h1>
+                    <p class="mt-6 text-sm md:text-base lg:text-lg text-gray-500 max-w-3xl">Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum urna ut volutpat. Sagittis et vel et fermentum amet consequat.</p>
                 </div>
             </div>
         </div>
 
         <!-- Contact section -->
-        <section class="relative bg-white" aria-labelledby="contact-heading">
+        <section class="relative bg-white pb-12" aria-labelledby="contact-heading">
             <div class="absolute w-full h-1/2 bg-gray-50" aria-hidden="true"></div>
             <!-- Decorative dot pattern -->
             <div class="relative app-container">
@@ -74,8 +74,8 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-white">Contact information</h3>
-                            <p class="mt-6 text-base text-red-50 max-w-3xl">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+                            <h3 class="sm:text-lg md:text-xl font-bold text-white">Contact information</h3>
+                            <p class="mt-6 text-xs sm:text-sm md:text-base text-red-50 max-w-3xl">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
                             <dl class="mt-8 space-y-6">
                                 <dt><span class="sr-only">Phone number</span></dt>
                                 <dd class="flex text-base text-red-50">
@@ -186,49 +186,5 @@
             </div>
         </section>
 
-        <!-- Contact grid -->
-        <section aria-labelledby="offices-heading">
-            <div class="app-container py-24 sm:py-32">
-                <h2 id="offices-heading" class="text-3xl font-extrabold text-gray-900">Our offices</h2>
-                <p class="mt-6 text-lg text-gray-500 max-w-3xl">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                    <div>
-                        <h3 class="text-lg font-medium text-gray-900">Los Angeles</h3>
-                        <p class="mt-2 text-base text-gray-500">
-                            <span class="block">4556 Brendan Ferry</span>
-
-                            <span class="block">Los Angeles, CA 90210</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 class="text-lg font-medium text-gray-900">New York</h3>
-                        <p class="mt-2 text-base text-gray-500">
-                            <span class="block">886 Walter Streets</span>
-
-                            <span class="block">New York, NY 12345</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 class="text-lg font-medium text-gray-900">Toronto</h3>
-                        <p class="mt-2 text-base text-gray-500">
-                            <span class="block">7363 Cynthia Pass</span>
-
-                            <span class="block">Toronto, ON N3Y 4H8</span>
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 class="text-lg font-medium text-gray-900">London</h3>
-                        <p class="mt-2 text-base text-gray-500">
-                            <span class="block">114 Cobble Lane</span>
-
-                            <span class="block">London N1 2EF</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 @endsection
