@@ -45,10 +45,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         @apply text-gray-500 tracking-wide leading-relaxed text-xs md:text-sm lg:text-base;
     }
     .page-main-title {
-        @apply tracking-tight text-3xl md:text-4xl xl:text-5xl mb-8 font-bold text-gray-900 text-center;
+        @apply tracking-tight text-3xl md:text-4xl xl:text-5xl mb-4 lg:mb-8 font-bold text-gray-900 text-center;
     }
     .page-main-description {
-        @apply text-gray-500 tracking-wide leading-relaxed text-center text-sm md:text-base xl:text-lg;
+        @apply text-gray-500 tracking-wide leading-relaxed text-center text-xs sm:text-sm md:text-base xl:text-lg;
     }
 
     .main-technology-grid {
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         @apply relative bg-white shadow rounded-lg border border-gray-200 overflow-auto;
     }
     .project-title {
-        @apply tracking-tight text-xl md:text-2xl font-semibold text-gray-900 sm:text-3xl;
+        @apply tracking-tight text-xl md:text-2xl font-semibold text-gray-900;
     }
     .project-description {
         @apply text-gray-500 mt-5 sm:mt-6 md:mt-7 text-sm md:text-base leading-6 md:leading-7;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         @apply lg:leading-tight tracking-tight text-center lg:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-5 lg:mb-7;
     }
     .landing-hero-description {
-        @apply text-center lg:text-left text-sm md:text-base xl:text-lg xl:leading-7 mb-4 lg:mb-7 text-gray-600;
+        @apply text-center lg:text-left text-sm md:text-base xl:text-lg xl:leading-7 mb-5 lg:mb-7 text-gray-600;
     }
 
     .footer-group {

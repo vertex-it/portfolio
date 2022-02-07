@@ -20,14 +20,13 @@
         </div>
     </div>
 
-    <div class="relative pb-4 lg:pb-24">
+    <div class="relative pb-6 md:pb-10 lg:pb-16">
         <div class="app-container">
             @include('layouts.navigation')
         </div>
 
-        <main class="app-container mt-16 lg:mt-24">
-
-            <div class="mb-10 max-w-2xl mx-auto">
+        <main class="app-container mt-12 lg:mt-20">
+            <div class="max-w-2xl mx-auto">
                 @if (isset($breadcrumbs))
                     <nav class="flex" aria-label="Breadcrumb">
                         <ol role="list" class="flex items-center mx-auto mb-6">

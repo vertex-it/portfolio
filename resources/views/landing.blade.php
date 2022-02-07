@@ -33,19 +33,19 @@
                     >
                 </div>
             </section>
-            <div class="pb-16">
+            <div class="pb-12 lg:pb-16">
                 <div class="max-w-2xl mx-auto grid grid-cols-1 gap-y-10 gap-x-12 lg:max-w-none lg:grid-cols-3">
                     <div class="sm:flex lg:block">
                         <div class="sm:flex-shrink-0">
                             <div class="flow-root">
-                                <svg class="h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#EF4444"></path><rect fill="#EF4444" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"></rect></g></svg>
+                                <svg class="h-10 md:h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#EF4444"></path><rect fill="#EF4444" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"></rect></g></svg>
                             </div>
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-5 lg:ml-0">
-                            <div class="text-lg font-medium text-gray-900">
+                            <div class="text-base md:text-lg font-medium text-gray-900">
                                 Web Development
                             </div>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-xs md:text-sm text-gray-500">
                                 Innovative web applications tailor-made for your specific online business requirements.
                             </p>
                         </div>
@@ -54,14 +54,14 @@
                     <div class="sm:flex lg:block">
                         <div class="sm:flex-shrink-0">
                             <div class="flow-root">
-                                <svg class="h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M13.686 18.708C15.91 17.82 18.683 17.25 22 17V5.506a.5.5 0 00-.513-.5C18.658 5.078 15.83 5.743 13 7v11.244a.5.5 0 00.686.464z" fill="#EF4444"></path><path d="M2.686 18.708C4.91 17.82 7.683 17.25 11 17V5.506a.5.5 0 00-.513-.5C7.658 5.078 4.83 5.743 2 7v11.244a.5.5 0 00.686.464z" fill="#EF4444" opacity=".3"></path></g></svg>
+                                <svg class="h-10 md:h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M13.686 18.708C15.91 17.82 18.683 17.25 22 17V5.506a.5.5 0 00-.513-.5C18.658 5.078 15.83 5.743 13 7v11.244a.5.5 0 00.686.464z" fill="#EF4444"></path><path d="M2.686 18.708C4.91 17.82 7.683 17.25 11 17V5.506a.5.5 0 00-.513-.5C7.658 5.078 4.83 5.743 2 7v11.244a.5.5 0 00.686.464z" fill="#EF4444" opacity=".3"></path></g></svg>
                             </div>
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-5 lg:ml-0">
-                            <div class="text-lg font-medium text-gray-900">
+                            <div class="text-base md:text-lg font-medium text-gray-900">
                                 Consulting
                             </div>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-xs md:text-sm text-gray-500">
                                 It&#039;s not actually free we just price it into the products. Someone&#039;s paying for it, and it&#039;s not us.
                             </p>
                         </div>
@@ -70,14 +70,14 @@
                     <div class="sm:flex lg:block">
                         <div class="sm:flex-shrink-0">
                             <div class="flow-root">
-                                <svg class="h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M2.56 10.682l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121zm12 0l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121z" fill="#EF4444" opacity=".3"></path><path d="M8.56 16.682l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121zm0-12l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0L8.561 6.803a1.5 1.5 0 010-2.121z" fill="#EF4444"></path></g></svg>
+                                <svg class="h-10 md:h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M2.56 10.682l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121zm12 0l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121z" fill="#EF4444" opacity=".3"></path><path d="M8.56 16.682l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121zm0-12l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0L8.561 6.803a1.5 1.5 0 010-2.121z" fill="#EF4444"></path></g></svg>
                             </div>
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-5 lg:ml-0">
-                            <div class="text-lg font-medium text-gray-900">
+                            <div class="text-base md:text-lg font-medium text-gray-900">
                                 Outsourcing
                             </div>
-                            <p class="mt-2 text-sm text-gray-500">
+                            <p class="mt-2 text-xs md:text-sm text-gray-500">
                                 It&#039;s not actually free we just price it into the products. Someone&#039;s paying for it, and it&#039;s not us.
                             </p>
                         </div>
@@ -89,7 +89,7 @@
     <div class="bg-gradient-to-b from-gray-50 to-white border-b border-gray-100">
         <div class="app-container">
             <section
-                class="py-20"
+                class="py-12 lg:py-20"
                 data-aos="fade-left"
                 data-aos-duration="1200"
             >
