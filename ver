@@ -36,7 +36,7 @@ build () {
 
 # Run a Composer command
 composer () {
-    dockerCompose run --rm "$APP_SERVICE" composer "${@:1}"
+    dockerCompose run -u ${UID}:${UID} --rm "$APP_SERVICE" composer "${@:1}"
 }
 
 # Remove the entire Docker environment
@@ -120,7 +120,7 @@ lintInstall () {
     echo "Installing vertex-it/php-cs"
 
     mkdir --parents tools/php-cs-fixer
-    composer require --working-dir=tools/php-cs-fixer vertex-it/php-cs
+    composer require --working-dir=tools/php-cs-fixer vertex-it/php-cs:dev-master
 
     cp tools/php-cs-fixer/vendor/vertex-it/php-cs/src/.php-cs-fixer.dist.php .php-cs-fixer.dist.php
 
