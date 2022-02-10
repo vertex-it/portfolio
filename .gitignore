@@ -16,3 +16,5 @@ yarn-error.log
 .directory
 public/css/app.css
 public/js/app.js
+tools/
+.php-cs-fixer.*

@@ -36,7 +36,7 @@ build () {
 
 # Run a Composer command
 composer () {
-    dockerCompose run --rm backend composer "${@:1}"
+    dockerCompose run --rm "$APP_SERVICE" composer "${@:1}"
 }
 
 # Remove the entire Docker environment
@@ -91,6 +91,42 @@ makeProject () {
     rm -rf laravel-app
 }
 
+hosts () {
+    read -p "This command will add your app url to /etc/hosts. Are you sure? [y/n]: " -r
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then exit; fi
+
+    app_url="$(cat .env | grep 'APP_URL' | cut -d '=' -f2)"
+
+    if [ -z "$app_url" ]
+    then
+          echo "APP_URL is empty. Aborting."
+    else
+          echo "127.0.0.1	$app_url" | sudo tee -a /etc/hosts
+          echo "Added to /etc/hosts"
+    fi
+}
+
+lint () {
+    if [ ! -d tools/php-cs-fixer/vendor/vertex-it/php-cs ]; then
+        echo "PHP cs fixer is not installed. Visit https://github.com/vertex-it/php-cs and install it, or run \"ver lint-install\"."
+
+        return
+    fi
+
+    dockerCompose run --rm app php tools/php-cs-fixer/vendor/bin/php-cs-fixer fix "${@:1}"
+}
+
+lintInstall () {
+    echo "Installing vertex-it/php-cs"
+
+    mkdir --parents tools/php-cs-fixer
+    composer require --working-dir=tools/php-cs-fixer vertex-it/php-cs
+
+    cp tools/php-cs-fixer/vendor/vertex-it/php-cs/src/.php-cs-fixer.dist.php .php-cs-fixer.dist.php
+
+    echo "Done. Run \"ver lint\" to run cs fixer"
+}
+
 case "$1" in
     start | up)
         start
@@ -100,6 +136,9 @@ case "$1" in
         ;;
     restart)
         stop && start
+        ;;
+    docker-compose)
+        dockerCompose "${@:2}"
         ;;
     build)
         build "${@:2}"
@@ -127,6 +166,15 @@ case "$1" in
         ;;
     localtunnel | share)
         dockerCompose logs localtunnel | grep "loca.lt"
+        ;;
+    hosts)
+        hosts
+        ;;
+    lint)
+        lint "${@:2}"
+        ;;
+    lint-install)
+        lintInstall
         ;;
     init)
         env \
