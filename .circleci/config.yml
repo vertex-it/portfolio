@@ -1,0 +1,73 @@
+version: 2.1
+
+parameters:
+    app_image:
+        type: string
+        default: $CI_REGISTRY_USER/$CIRCLE_PROJECT_REPONAME
+    app_image_versioned:
+        type: string
+        default: $CI_REGISTRY_USER/$CIRCLE_PROJECT_REPONAME:$CIRCLE_SHA1
+
+executors:
+    docker-executor:
+        environment:
+            DOCKER_BUILDKIT: "1"
+        docker:
+            - image: cimg/base:2021.04
+
+workflows:
+    run-ci:
+        jobs:
+            - build
+
+jobs:
+    build:
+        executor: docker-executor
+        steps:
+            - checkout
+            - setup_remote_docker:
+                  version: 20.10.6
+            - run:
+                  name: Build Images
+                  command: |
+                      docker build \
+                          --target final \
+                          --progress plain \
+                          --tag << pipeline.parameters.app_image_versioned >> \
+                          . \
+                          --file .docker/prod.Dockerfile
+
+                      docker build \
+                          --cache-from << pipeline.parameters.app_image_versioned >> \
+                          --target testing \
+                          --progress plain \
+                          --tag app:test \
+                          . \
+                          --file .docker/prod.Dockerfile
+            - run:
+                  name: Start Containers
+                  command: docker-compose -f .circleci/docker-compose.ci.yml up -d
+            - run:
+                  name: Run Tests
+                  command: |
+                      docker-compose -f .circleci/docker-compose.ci.yml exec app sh -c "
+                          set -e
+                          cp .circleci/.env.testing .env
+                          php artisan key:generate --force
+                          curl mysql:3306 --http0.9 --retry-connrefused --retry 30 --output /dev/null --silent
+                          ./vendor/bin/phpunit --log-junit testresults.xml
+                      "
+                      docker-compose -f .circleci/docker-compose.ci.yml exec app sh -c "cat testresults.xml" > ~/testresults.xml
+            - run:
+                  name: Run CS Fixer
+                  command: |
+                      docker ps
+            - run:
+                  name: Push the image to CI Registry
+                  command: |
+                      docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+                      docker push << pipeline.parameters.app_image_versioned >>
+                      docker tag << pipeline.parameters.app_image_versioned >> << pipeline.parameters.app_image >>:latest
+                      docker push << pipeline.parameters.app_image >>:latest
+            - store_artifacts:
+                  path: ~/testresults.xml

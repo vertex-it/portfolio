@@ -1,5 +1,5 @@
 # Install composer dependencies
-FROM composer:2.1.12 AS composer-builder
+FROM composer:2.5.4 AS composer-builder
 
 WORKDIR /var/www/html
 
@@ -21,7 +21,7 @@ RUN npm ci
 RUN npm run production
 
 # Build production image
-FROM php:8.0-fpm-alpine3.15 as final
+FROM php:8.1-fpm-alpine3.17 as final
 
 LABEL maintainer="Mile Panić"
 
@@ -29,16 +29,27 @@ WORKDIR /var/www/html
 
 # ------------------------ Nginx & Common PHP Dependencies ------------------------
 RUN apk update && apk add \
+        tzdata \
         nginx \
         # see https://github.com/docker-library/php/issues/880
         oniguruma-dev \
         # needed for gd
-        libpng-dev libjpeg-turbo-dev \
+        freetype-dev libpng-dev libjpeg libjpeg-turbo-dev \
+        # install redis
+        pcre-dev \
+    && pecl install redis \
+    && docker-php-ext-enable redis \
+    && apk del pcre-dev ${PHPIZE_DEPS} \
+    && rm -rf /tmp/pear \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     # Installing common Laravel dependencies
-    && docker-php-ext-install mbstring pdo_mysql gd \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install exif mbstring pdo_mysql gd \
     	# Adding opcache
     	opcache
+
+# ------------------------ Set Timezone ------------------------
+ENV TZ=Europe/Sarajevo
 
 # ------------------------ Add s6 overlay ------------------------
 ADD https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-amd64-installer /tmp/
@@ -61,7 +72,7 @@ ADD .docker/nginx/healthcheck.ini /usr/local/etc/php/healthcheck.ini
 RUN rm -rf /var/cache/apk/* && \
         rm -rf /tmp/*
 
-COPY --from=composer:2.1.12 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.5.4 /usr/bin/composer /usr/bin/composer
 
 COPY --chown=www-data --from=composer-builder /var/www/html/vendor/ /var/www/html/vendor/
 COPY --chown=www-data --from=npm-builder /var/www/html/public/ /var/www/html/public/
@@ -88,5 +99,5 @@ RUN apk update && apk add pcre-dev ${PHPIZE_DEPS} \
   && apk del pcre-dev ${PHPIZE_DEPS} \
   && echo "[xdebug]xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
-COPY --from=composer:2.1.12 /usr/bin/composer /usr/bin/composer
-RUN composer require phpunit/phpunit:^9.5
+COPY --from=composer:2.5.4 /usr/bin/composer /usr/bin/composer
+RUN composer require phpunit/phpunit:^10.0

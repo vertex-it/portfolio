@@ -1,4 +1,4 @@
-FROM php:8.0-fpm-alpine3.15
+FROM php:8.1-fpm-alpine3.17
 
 LABEL maintainer="Mile Panić"
 
@@ -11,21 +11,32 @@ ENV XDEBUG_ENABLE ${XDEBUG_ENABLE}
 
 # ------------------------ Nginx & Common PHP Dependencies ------------------------
 RUN apk update && apk add \
+        tzdata \
         nginx \
         # see https://github.com/docker-library/php/issues/880
         oniguruma-dev \
         # needed for gd
-        libpng-dev libjpeg-turbo-dev \
+        freetype-dev libpng-dev libjpeg libjpeg-turbo-dev \
 		# needed for xdebug
 		$PHPIZE_DEPS \
         # install node & npm
         nodejs npm \
+        # install redis
+        pcre-dev \
+    && pecl install redis \
+    && docker-php-ext-enable redis \
+    && apk del pcre-dev ${PHPIZE_DEPS} \
+    && rm -rf /tmp/pear \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    # Installing common Laravel dependencies
-    && docker-php-ext-install mbstring pdo_mysql gd
+    # Installing common Laravel dependencies \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install exif mbstring pdo_mysql gd
+
+# ------------------------ Set Timezone ------------------------
+ENV TZ=Europe/Sarajevo
 
 # ------------------------ Composer ------------------------
-COPY --from=composer:2.1.12 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.5.4 /usr/bin/composer /usr/bin/composer
 
 # ------------------------ Add s6 overlay ------------------------
 ADD https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-amd64-installer /tmp/
