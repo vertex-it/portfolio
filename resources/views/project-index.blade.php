@@ -5,7 +5,7 @@
 @section('content')
     @include('components.subpage-main-section', [
         'title' => 'Our Work',
-        'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.'
+        'description' => 'Explore our diverse range of client collaborations, innovative designs, and impactful results, making us a trusted choice for businesses seeking exceptional digital experiences.'
     ])
 
     <div class="app-container py-10 lg:py-16">

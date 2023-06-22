@@ -98,10 +98,10 @@
                         <div class="max-w-xl mb-6">
                             <p class="landing-section-title-info">Who we are</p>
                             <h2 class="landing-section-title">
-                                The quick, brown fox jumps over a lazy dog
+                                Expert web developers creating digital success.
                             </h2>
                             <p class="landing-section-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                                At our web development company, we create customized web solutions to bring your digital vision to life. Our skilled team specializes in crafting innovative websites and seamless user experiences. With a commitment to excellence, we are your trusted partner in driving online growth.
                             </p>
                         </div>
                         <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
@@ -123,7 +123,7 @@
                                             />
                                         </svg>
                                     </span>
-                                    A slice of heaven
+                                    Customized web development solutions
                                 </li>
                                 <li class="flex">
                                     <span class="mr-2 text-red-500">
@@ -142,7 +142,7 @@
                                             />
                                         </svg>
                                     </span>
-                                    Disrupt inspire
+                                    Innovative website design and development
                                 </li>
                                 <li class="flex">
                                     <span class="mr-2 text-red-500">
@@ -161,7 +161,7 @@
                                             />
                                         </svg>
                                     </span>
-                                    Preliminary thinking
+                                    Seamless user experience optimization
                                 </li>
                             </ul>
                             <ul class="space-y-3 text-gray-700">
@@ -182,7 +182,7 @@
                                             />
                                         </svg>
                                     </span>
-                                    Flipboard curmudgeon
+                                    Online growth strategies and implementation
                                 </li>
                                 <li class="flex">
                                     <span class="mr-2 text-red-500">
@@ -201,7 +201,7 @@
                                             />
                                         </svg>
                                     </span>
-                                    Storage shed
+                                    Expertise in cutting-edge technologies
                                 </li>
                                 <li class="flex">
                                     <span class="mr-2 text-red-500">
@@ -220,7 +220,7 @@
                                             />
                                         </svg>
                                     </span>
-                                    Satoshi Nakamoto
+                                    Responsive and mobile-friendly web design
                                 </li>
                             </ul>
                         </div>
@@ -239,11 +239,11 @@
                 data-aos="fade-down"
                 data-aos-duration="1200"
             >
-                <div class="mb-6 lg:mb-24 max-w-2xl mx-auto">
+                <div class="mb-6 lg:mb-24 max-w-3xl mx-auto">
                     <p class="landing-section-title-info text-center">Technology</p>
                     <h2 class="landing-section-title text-center">Our main technology stack</h2>
                     <p class="landing-section-description text-center">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
+                        Among our extensive toolset, our core technologies are Laravel, React, and Docker. These foundational components empower us to deliver secure and scalable web applications with interactive user interfaces.
                     </p>
                 </div>
                 <div class="main-technology-grid">
@@ -253,7 +253,7 @@
                             data-aos="zoom-out"
                             data-aos-duration="1000"
                         >
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="mx-auto h-24 md:h-20" alt="">
+                            <img src="{{ asset('img/laravel.png') }}" class="mx-auto h-24 md:h-20" alt="">
                             <div class="main-technology-name">Laravel</div>
                             <p class="main-technology-description">
                                 Web application framework with expressive, elegant syntax.
@@ -267,8 +267,8 @@
                             data-aos-duration="1000"
                             data-aos-delay="300"
                         >
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" class="mx-auto h-24 md:h-20" alt="">
-                            <div class="main-technology-name">Vue JS</div>
+                            <img src="{{ asset('img/react.png') }}" class="mx-auto h-24 md:h-20" alt="">
+                            <div class="main-technology-name">React</div>
                             <p class="main-technology-description">
                                 Progressive framework for building user interfaces.
                             </p>
@@ -281,7 +281,7 @@
                             data-aos-duration="1000"
                             data-aos-delay="600"
                         >
-                            <img src="https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png" class="mx-auto h-24 md:h-20" alt="">
+                            <img src="{{ asset('img/docker.png') }}" class="mx-auto h-24 md:h-20" alt="">
                             <div class="main-technology-name">Docker</div>
                             <p class="main-technology-description">
                                 Open platform for developing, shipping, and running applications.
@@ -334,7 +334,7 @@
                             <div class="pt-1 pb-8">
                                 <p class="dev-process-title">Planning and design</p>
                                 <p class="dev-process-description">
-                                    All recipes are written using certain conventions, which define the characteristics of common ingredients. The rules vary from place to place.
+                                    We meticulously strategize and design the blueprint of your project, ensuring a solid foundation for development.
                                 </p>
                             </div>
                         </div>
@@ -371,7 +371,7 @@
                             <div class="pt-1 pb-8">
                                 <p class="dev-process-title">Development</p>
                                 <p class="dev-process-description">
-                                    The first mate and his Skipper too will do their very best to make the others comfortable in their tropic island nest. Michael Knight a young loner.
+                                    Our skilled team brings your vision to life through expert coding and implementation, delivering a functional and feature-rich website.
                                 </p>
                             </div>
                         </div>
@@ -408,7 +408,7 @@
                             <div class="pt-1 pb-8">
                                 <p class="dev-process-title">Testing</p>
                                 <p class="dev-process-description">
-                                    Tell them I hate them. Is the Space Pope reptilian!? Tell her she looks thin. Hello, little man. I will destroy you!
+                                    Rigorous testing procedures are employed to guarantee the highest quality and optimal performance of your web application.
                                 </p>
                             </div>
                         </div>

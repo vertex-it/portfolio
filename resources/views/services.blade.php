@@ -5,7 +5,7 @@
 @section('content')
     @include('components.subpage-main-section', [
         'title' => 'Services',
-        'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.'
+        'description' => 'Our comprehensive services include professional web development, strategic consulting for digital success, and reliable outsourcing solutions, empowering businesses with cutting-edge technologies, tailored strategies, and dedicated development teams.'
     ])
 
     <div class="py-12 lg:py-16 overflow-hidden lg:py-24">
@@ -20,43 +20,56 @@
                         Web Development
                     </h2>
                     <p class="mt-6 text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit.
+                        From concept to execution, we craft customized web solutions tailored to your unique business requirements, utilizing cutting-edge technologies and industry best practices.
                     </p>
 
                     <dl class="mt-10 space-y-10">
                         <div class="relative">
                             <dt>
-                                <p class="text-lg font-bold">Latest technologies</p>
+                                <p class="text-lg font-bold">Custom Web Development</p>
                             </dt>
                             <dd class="mt-2 text-sm text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Tailor-made websites that align perfectly with your business goals.
                             </dd>
                         </div>
 
                         <div class="relative">
                             <dt>
-                                <p class="text-lg leading-6 font-semibold text-gray-900">Competitive exchange rates</p>
+                                <p class="text-lg leading-6 font-semibold text-gray-900">Responsive Design</p>
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Ensuring seamless user experiences across all devices and screen sizes.
                             </dd>
                         </div>
 
                         <div class="relative">
                             <dt>
-                                <p class="text-lg leading-6 font-semibold text-gray-900">Something else</p>
+                                <p class="text-lg leading-6 font-semibold text-gray-900">E-commerce Development</p>
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Building secure and scalable online stores for your products or services.
                             </dd>
                         </div>
                     </dl>
                 </div>
 
                 <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-                    <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+                    <svg
+                        class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
+                        width="784"
+                        height="404"
+                        fill="none"
+                        viewBox="0 0 784 404"
+                    >
                         <defs>
-                            <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <pattern
+                                id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                                x="0"
+                                y="0"
+                                width="20"
+                                height="20"
+                                patternUnits="userSpaceOnUse"
+                            >
                                 <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
                             </pattern>
                         </defs>
@@ -73,46 +86,57 @@
                             Consulting
                         </h3>
                         <p class="mt-3 text-lg text-gray-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+                            Leverage our experience and knowledge to gain valuable insights and strategic guidance for optimizing your digital presence and achieving your business objectives.
                         </p>
 
                         <dl class="mt-10 space-y-10">
                             <div class="relative">
                                 <dt>
-                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                                        <!-- Heroicon name: outline/annotation -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                                        </svg>
-                                    </div>
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Mobile notifications</p>
+                                    <p class="text-lg font-bold">Digital Strategy</p>
                                 </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                <dd class="mt-2 text-sm text-gray-500">
+                                    Developing a comprehensive roadmap to maximize your online potential.
                                 </dd>
                             </div>
 
                             <div class="relative">
                                 <dt>
-                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                                        <!-- Heroicon name: outline/mail -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                    </div>
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Reminder emails</p>
+                                    <p class="text-lg leading-6 font-semibold text-gray-900">UX/UI Consulting</p>
                                 </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                <dd class="mt-2 text-base text-gray-500">
+                                    Enhancing user experiences through intuitive design and usability testing.
+                                </dd>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <p class="text-lg leading-6 font-semibold text-gray-900">SEO and Digital Marketing</p>
+                                </dt>
+                                <dd class="mt-2 text-base text-gray-500">
+                                    Boosting your online visibility and driving targeted traffic to your website.
                                 </dd>
                             </div>
                         </dl>
                     </div>
 
                     <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-                        <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
+                        <svg
+                            class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
+                            width="784"
+                            height="404"
+                            fill="none"
+                            viewBox="0 0 784 404"
+                            aria-hidden="true"
+                        >
                             <defs>
-                                <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <pattern
+                                    id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                                    x="0"
+                                    y="0"
+                                    width="20"
+                                    height="20"
+                                    patternUnits="userSpaceOnUse"
+                                >
                                     <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
                                 </pattern>
                             </defs>
@@ -129,43 +153,56 @@
                         Outsourcing
                     </h2>
                     <p class="mt-6 text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam, velit.
+                        Optimize your resources and streamline operations by entrusting your development and maintenance tasks to our dedicated team of professionals.
                     </p>
 
                     <dl class="mt-10 space-y-10">
                         <div class="relative">
                             <dt>
-                                <p class="text-lg font-bold">Latest technologies</p>
+                                <p class="text-lg font-bold">Dedicated Development Team</p>
                             </dt>
                             <dd class="mt-2 text-sm text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Extending your capabilities with a dedicated team that aligns with your project goals.
                             </dd>
                         </div>
 
                         <div class="relative">
                             <dt>
-                                <p class="text-lg leading-6 font-semibold text-gray-900">Competitive exchange rates</p>
+                                <p class="text-lg leading-6 font-semibold text-gray-900">Application Support and Maintenance</p>
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Ensuring the smooth functioning and continuous improvement of your web applications.
                             </dd>
                         </div>
 
                         <div class="relative">
                             <dt>
-                                <p class="text-lg leading-6 font-semibold text-gray-900">Something else</p>
+                                <p class="text-lg leading-6 font-semibold text-gray-900">Quality Assurance</p>
                             </dt>
                             <dd class="mt-2 text-base text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                Rigorous testing and quality control to deliver bug-free and reliable software solutions.
                             </dd>
                         </div>
                     </dl>
                 </div>
 
                 <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-                    <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+                    <svg
+                        class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
+                        width="784"
+                        height="404"
+                        fill="none"
+                        viewBox="0 0 784 404"
+                    >
                         <defs>
-                            <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <pattern
+                                id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                                x="0"
+                                y="0"
+                                width="20"
+                                height="20"
+                                patternUnits="userSpaceOnUse"
+                            >
                                 <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
                             </pattern>
                         </defs>
@@ -191,7 +228,7 @@
             <div class="technology-item">
                 <a href="laravel.html">
                     <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                        <img src="{{ asset('img/laravel.png') }}" alt="">
                     </div>
                     <div class="technology-name">Laravel</div>
                 </a>
@@ -200,67 +237,53 @@
             <div class="technology-item">
                 <a href="laravel.html">
                     <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
+                        <img src="{{ asset('img/react.png') }}" alt="">
                     </div>
-                    <div class="technology-name">Laravel</div>
-                </a>
-            </div>
-            <div class="technology-item">
-                <a href="laravel.html">
-                    <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                    </div>
-                    <div class="technology-name">Laravel</div>
-                </a>
-            </div>
-            <div class="technology-item">
-                <a href="laravel.html">
-                    <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                    </div>
-                    <div class="technology-name">Laravel</div>
-                </a>
-            </div>
-            <div class="technology-item">
-                <a href="laravel.html">
-                    <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                    </div>
-                    <div class="technology-name">Laravel</div>
-                </a>
-            </div>
-            <div class="technology-item">
-                <a href="laravel.html">
-                    <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                    </div>
-                    <div class="technology-name">Laravel</div>
-                </a>
-            </div>
-            <div class="technology-item">
-                <a href="laravel.html">
-                    <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                    </div>
-                    <div class="technology-name">Laravel</div>
-                </a>
-            </div>
-            <div class="technology-item">
-                <a href="laravel.html">
-                    <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                    </div>
-                    <div class="technology-name">Laravel</div>
-                </a>
-            </div><div class="technology-item">
-                <a href="laravel.html">
-                    <div class="technology-image">
-                        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="">
-                    </div>
-                    <div class="technology-name">Laravel</div>
+                    <div class="technology-name">React</div>
                 </a>
             </div>
 
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/html.png') }}" alt="">
+                </div>
+                <div class="technology-name">HTML</div>
+            </div>
+
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/javascript.png') }}" alt="">
+                </div>
+                <div class="technology-name">JavaScript</div>
+            </div>
+
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/docker.png') }}" alt="">
+                </div>
+                <div class="technology-name">Docker</div>
+            </div>
+
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/aws.png') }}" alt="">
+                </div>
+                <div class="technology-name">Amazon Web Services</div>
+            </div>
+
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/php.png') }}" alt="">
+                </div>
+                <div class="technology-name">PHP</div>
+            </div>
+
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/vue.png') }}" alt="">
+                </div>
+                <div class="technology-name">Vue JS</div>
+            </div>
 
         </div>
     </section>
