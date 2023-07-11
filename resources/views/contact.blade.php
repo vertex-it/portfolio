@@ -179,6 +179,12 @@
                                         Submit
                                     </button>
                                 </div>
+                                {!! htmlFormSnippet() !!}
+                                @if($errors->has('g-recaptcha-response'))
+                                    <div>
+                                        <small class="text-danger">{{ $errors->first('g-recaptcha-response') }}</small>
+                                    </div>
+                                @endif
                             </form>
                         </div>
                     </div>
