@@ -35,6 +35,9 @@ class ContactUs extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mail.contact');
+        return $this
+            ->from($this->contact['mail'], $this->contact['first_name'] . ' ' . $this->contact['last_name'])
+            ->subject($this->contact['subject'])
+            ->markdown('mail.contact');
     }
 }

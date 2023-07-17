@@ -1,8 +1,7 @@
 @component('mail::message')
-    {{ $contact['subject'] }}
-    
-    
-    
-    
-    {{ $contact['message'] }}
+{{ $contact['message'] }}
+
+@if ($contact['phone'])
+Phone: {{ $contact['phone'] }}
+@endif
 @endcomponent
