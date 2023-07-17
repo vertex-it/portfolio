@@ -5,8 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Ubuntu', sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navigation-item, .button-main {
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Manrope', sans-serif;
 }
 
 * {
@@ -18,6 +19,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 @layer components {
+    .custom-header-shadow {
+        box-shadow: 0 0.25rem 0.75rem rgba(30,34,40,.02);
+    }
+
     .app-container {
         @apply container mx-auto max-w-md sm:max-w-xl lg:max-w-full xl:max-w-screen-xl px-4;
     }
@@ -30,10 +35,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         @apply hidden lg:flex w-full md:w-auto md:space-x-8 mt-4 md:mt-0;
     }
     .navigation-item {
-        @apply block lg:inline-block py-3 text-center tracking-tight text-lg lg:text-left lg:py-0 border-b border-gray-200 lg:border-0 text-gray-900 transition-colors duration-200 hover:text-red-600;
+        @apply block lg:inline-block font-medium py-3 text-center tracking-tight text-lg lg:text-left lg:py-0 border-b border-gray-200 lg:border-0 text-gray-900 transition-colors duration-200 hover:text-red-600;
     }
     .navigation-item.active {
-        @apply text-red-500 font-medium;
+        @apply text-red-500;
     }
 
     .landing-section-title-info {

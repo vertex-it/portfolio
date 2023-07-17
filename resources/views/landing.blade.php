@@ -3,10 +3,10 @@
 @section('title', 'Welcome')
 
 @section('content')
-    <div class="border-b border-gray-100 lg:h-screen">
+    <div class="bg-gradient-to-b from-red-50 to-white">
         <div class="flex flex-col justify-between h-full app-container">
             @include('layouts.navigation')
-            <section class="flex flex-wrap justify-between my-14 lg:my-0">
+            <section class="flex flex-wrap justify-between mt-24 mb-56">
                 <div
                     class="w-full lg:w-1/2 max-w-2xl lg:max-w-full mx-auto order-2 lg:order-1 flex flex-col justify-center lg:items-start lg:pr-10"
                     data-aos="fade-down"
@@ -33,52 +33,61 @@
                     >
                 </div>
             </section>
-            <div class="pb-12 lg:pb-16">
-                <div class="max-w-2xl mx-auto grid grid-cols-1 gap-y-10 gap-x-12 lg:max-w-none lg:grid-cols-3">
-                    <div class="sm:flex lg:block">
+        </div>
+    </div>
+    <div class="app-container -mt-32">
+        <div class="pb-12 lg:pb-16">
+            <div class="max-w-2xl mx-auto grid grid-cols-1 gap-y-10 gap-x-12 lg:max-w-none lg:grid-cols-3">
+                <div class="sm:flex lg:block bg-white rounded-lg shadow-lg border border-gray-100">
+                    <div class="px-10 py-8 border-b-4 border-red-500 rounded-lg">
                         <div class="sm:flex-shrink-0">
                             <div class="flow-root">
                                 <svg class="h-10 md:h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#EF4444"></path><rect fill="#EF4444" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"></rect></g></svg>
                             </div>
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-5 lg:ml-0">
-                            <div class="text-base md:text-lg font-medium text-gray-900">
+                            <div class="text-lg md:text-xl font-medium text-black">
                                 Web Development
                             </div>
-                            <p class="mt-2 text-xs md:text-sm text-gray-500">
-                                Innovative web applications tailor-made for your specific online business requirements.
+                            <p class="mt-3 text-sm md:text-base text-gray-600">
+                                We create innovative web solutions tailored to your unique needs. Our expert team crafts stunning websites and robust web applications that leave a lasting impact on your audience
                             </p>
                         </div>
-                    </div>
 
-                    <div class="sm:flex lg:block">
+                    </div>
+                </div>
+
+                <div class="sm:flex lg:block bg-white rounded-lg shadow-lg border border-gray-100">
+                    <div class="px-10 py-8 border-b-4 border-red-500 rounded-lg">
                         <div class="sm:flex-shrink-0">
                             <div class="flow-root">
                                 <svg class="h-10 md:h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M13.686 18.708C15.91 17.82 18.683 17.25 22 17V5.506a.5.5 0 00-.513-.5C18.658 5.078 15.83 5.743 13 7v11.244a.5.5 0 00.686.464z" fill="#EF4444"></path><path d="M2.686 18.708C4.91 17.82 7.683 17.25 11 17V5.506a.5.5 0 00-.513-.5C7.658 5.078 4.83 5.743 2 7v11.244a.5.5 0 00.686.464z" fill="#EF4444" opacity=".3"></path></g></svg>
                             </div>
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-5 lg:ml-0">
-                            <div class="text-base md:text-lg font-medium text-gray-900">
+                            <div class="text-lg md:text-xl font-medium text-black">
                                 Consulting
                             </div>
-                            <p class="mt-2 text-xs md:text-sm text-gray-500">
-                                It&#039;s not actually free we just price it into the products. Someone&#039;s paying for it, and it&#039;s not us.
+                            <p class="mt-3 text-sm md:text-base text-gray-600">
+                                With our expert guidance, navigate the complexities of the digital landscape. From tailored strategies to innovative solutions, we help you achieve your goals and stay ahead in the ever-evolving online market.
                             </p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="sm:flex lg:block">
+                <div class="sm:flex lg:block bg-white rounded-lg shadow-lg border border-gray-100">
+                    <div class="px-10 py-8 border-b-4 border-red-500 rounded-lg">
                         <div class="sm:flex-shrink-0">
                             <div class="flow-root">
                                 <svg class="h-10 md:h-14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M2.56 10.682l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121zm12 0l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121z" fill="#EF4444" opacity=".3"></path><path d="M8.56 16.682l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0l-2.121-2.122a1.5 1.5 0 010-2.121zm0-12l2.122-2.121a1.5 1.5 0 012.121 0l2.122 2.121a1.5 1.5 0 010 2.121l-2.122 2.122a1.5 1.5 0 01-2.121 0L8.561 6.803a1.5 1.5 0 010-2.121z" fill="#EF4444"></path></g></svg>
                             </div>
                         </div>
                         <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-5 lg:ml-0">
-                            <div class="text-base md:text-lg font-medium text-gray-900">
+                            <div class="text-lg md:text-xl font-medium text-black">
                                 Outsourcing
                             </div>
-                            <p class="mt-2 text-xs md:text-sm text-gray-500">
-                                It&#039;s not actually free we just price it into the products. Someone&#039;s paying for it, and it&#039;s not us.
+                            <p class="mt-3 text-sm md:text-base text-gray-600">
+                                Supercharge your projects with our top-tier developers. Embrace efficiency and cost-effectiveness by outsourcing to our skilled team. Let's join forces and achieve unparalleled success together!
                             </p>
                         </div>
                     </div>
@@ -86,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-gradient-to-b from-gray-50 to-white border-b border-gray-100">
+    <div class="bg-gradient-to-b from-white to-gray-50 border-b border-gray-100">
         <div class="app-container">
             <section
                 class="py-12 lg:py-20"
@@ -101,7 +110,7 @@
                                 Expert web developers creating digital success.
                             </h2>
                             <p class="landing-section-description">
-                                At our web development company, we create customized web solutions to bring your digital vision to life. Our skilled team specializes in crafting innovative websites and seamless user experiences. With a commitment to excellence, we are your trusted partner in driving online growth.
+                                Here at Vertex IT, we create customized web solutions to bring your digital vision to life. Our skilled team specializes in crafting innovative websites and seamless user experiences. With a commitment to excellence, we are your trusted partner in driving online growth.
                             </p>
                         </div>
                         <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
@@ -142,48 +151,10 @@
                                             />
                                         </svg>
                                     </span>
-                                    Innovative website design and development
-                                </li>
-                                <li class="flex">
-                                    <span class="mr-2 text-red-500">
-                                        <svg
-                                            width="5"
-                                            height="5"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="h-5 w-5"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </span>
                                     Seamless user experience optimization
                                 </li>
                             </ul>
                             <ul class="space-y-3 text-gray-700">
-                                <li class="flex">
-                                    <span class="mr-2 text-red-500">
-                                        <svg
-                                            width="5"
-                                            height="5"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="h-5 w-5"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"
-                                            />
-                                        </svg>
-                                    </span>
-                                    Online growth strategies and implementation
-                                </li>
                                 <li class="flex">
                                     <span class="mr-2 text-red-500">
                                         <svg
@@ -332,7 +303,7 @@
                                 <div class="w-px h-full bg-gray-300"></div>
                             </div>
                             <div class="pt-1 pb-8">
-                                <p class="dev-process-title">Planning and design</p>
+                                <h4 class="dev-process-title">Planning and design</h4>
                                 <p class="dev-process-description">
                                     We meticulously strategize and design the blueprint of your project, ensuring a solid foundation for development.
                                 </p>
@@ -369,7 +340,7 @@
                                 <div class="w-px h-full bg-gray-300"></div>
                             </div>
                             <div class="pt-1 pb-8">
-                                <p class="dev-process-title">Development</p>
+                                <h4 class="dev-process-title">Development</h4>
                                 <p class="dev-process-description">
                                     Our skilled team brings your vision to life through expert coding and implementation, delivering a functional and feature-rich website.
                                 </p>
@@ -406,7 +377,7 @@
                                 <div class="w-px h-full bg-gray-300"></div>
                             </div>
                             <div class="pt-1 pb-8">
-                                <p class="dev-process-title">Testing</p>
+                                <h4 class="dev-process-title">Testing</h4>
                                 <p class="dev-process-description">
                                     Rigorous testing procedures are employed to guarantee the highest quality and optimal performance of your web application.
                                 </p>
@@ -430,7 +401,7 @@
                                 </div>
                             </div>
                             <div class="pt-1">
-                                <p class="dev-process-title">Deliver the project</p>
+                                <h4 class="dev-process-title">Deliver the project</h4>
                                 <p class="dev-process-description"></p>
                             </div>
                         </div>
@@ -541,7 +512,7 @@
         </div>
     </section>
 
-    <section class="bg-white overflow-hidden my-12 lg:my-32">
+    <section class="bg-gradient-to-b from-gray-50 to-white overflow-hidden py-12 lg:py-32">
         <div class="mb-6 lg:mb-16 app-container">
             <span class="landing-section-title-info text-center">Testimonials</span>
             <h2 class="landing-section-title text-center">

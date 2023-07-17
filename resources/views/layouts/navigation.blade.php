@@ -1,4 +1,8 @@
-<header class="flex flex-wrap items-center justify-between py-4 lg:py-8">
+@if (Route::currentRouteName() === 'landing')
+    <header class="flex flex-wrap items-center justify-between px-6 py-4 lg:py-6 bg-white mt-5 rounded-lg custom-header-shadow">
+@else
+    <header class="flex flex-wrap items-center justify-between py-4 lg:py-8">
+@endif
     <a href="{{ route('landing') }}" aria-label="Vertex IT" title="Vertex IT">
         <img src="{{ asset('img/logo.svg') }}" class="h-5 md:h-6 lg:h-7" alt="Vertex IT logo">
     </a>

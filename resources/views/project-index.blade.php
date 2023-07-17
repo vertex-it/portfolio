@@ -20,9 +20,9 @@
                 <div class="lg:col-start-2 lg:pl-8">
                     <div class="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0 flex flex-col justify-between h-full">
                         <div>
-                            <div class="project-title">
+                            <h5 class="project-title">
                                 Aspirano group of websites
-                            </div>
+                            </h5>
                             <p class="project-description">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nihil ea rerum ipsa. Nostrum consectetur sequi culpa doloribus omnis, molestiae esse placeat, exercitationem magnam quod molestias quia aspernatur deserunt
                             </p>
@@ -47,9 +47,9 @@
                 <div class="lg:pr-8">
                     <div class="text-base max-w-prose mx-auto lg:max-w-lg lg:mr-auto lg:mr-0 flex flex-col justify-between h-full">
                         <div>
-                            <div class="project-title">
+                            <h5 class="project-title">
                                 Invoices app
-                            </div>
+                            </h5>
                             <p class="project-description">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nihil ea rerum ipsa. Nostrum consectetur sequi culpa doloribus omnis, molestiae esse placeat, exercitationem magnam quod molestias quia aspernatur deserunt
                             </p>
