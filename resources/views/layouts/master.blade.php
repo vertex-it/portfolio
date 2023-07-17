@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&family=Architects+Daughter&family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+        
         {!! htmlScriptTagJsApi() !!}
         <style>
 
@@ -50,5 +50,6 @@
 
         @yield('scripts')
         @stack('scripts')
+        @include('layouts.alerts')
     </body>
 </html>
