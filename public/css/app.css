@@ -1097,7 +1097,7 @@ video {
   .technology-stack-grid{
     margin-left: -2.5rem;
     margin-right: -2.5rem;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .technology-item{
@@ -2464,21 +2464,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navigation-item, .button-
     height: 100%;
   }
 
-  .lg\:max-h-full{
-    max-height: 100%;
-  }
-
   .lg\:max-h-80{
     max-height: 20rem;
-  }
-
-  .lg\:max-h-96{
-    max-height: 24rem;
-  }
-
-  .lg\:max-h-fit{
-    max-height: -moz-fit-content;
-    max-height: fit-content;
   }
 
   .lg\:w-1\/2{
@@ -2735,4 +2722,3 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navigation-item, .button-
     text-align: center;
   }
 }
-
