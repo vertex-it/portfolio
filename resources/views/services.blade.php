@@ -226,7 +226,7 @@
         </div>
         <div class="technology-stack-grid">
             <div class="technology-item">
-                <a href="laravel.html">
+                <a href="{{ route('service', 'laravel') }}">
                     <div class="technology-image">
                         <img src="{{ asset('img/laravel.png') }}" alt="">
                     </div>
@@ -235,11 +235,45 @@
             </div>
 
             <div class="technology-item">
-                <a href="laravel.html">
+                <a href="{{ route('service', 'laravel') }}">
+                    <div class="technology-image">
+                        <img src="{{ asset('img/symfony.webp') }}" alt="">
+                    </div>
+                    <div class="technology-name">Symfony</div>
+                </a>
+            </div>
+
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/php.png') }}" alt="">
+                </div>
+                <div class="technology-name">PHP</div>
+            </div>
+
+            <div class="technology-item">
+                <a href="{{ route('service', 'laravel') }}">
                     <div class="technology-image">
                         <img src="{{ asset('img/react.png') }}" alt="">
                     </div>
-                    <div class="technology-name">React</div>
+                    <div class="technology-name">React JS</div>
+                </a>
+            </div>
+
+            <div class="technology-item">
+                <a href="{{ route('service', 'laravel') }}">
+                    <div class="technology-image">
+                        <img src="{{ asset('img/nextjs.png') }}" alt="">
+                    </div>
+                    <div class="technology-name">Next JS</div>
+                </a>
+            </div>
+
+            <div class="technology-item">
+                <a href="{{ route('service', 'laravel') }}">
+                    <div class="technology-image">
+                        <img src="{{ asset('img/reactnative.png') }}" alt="">
+                    </div>
+                    <div class="technology-name">React Native</div>
                 </a>
             </div>
 
@@ -248,6 +282,13 @@
                     <img src="{{ asset('img/html.png') }}" alt="">
                 </div>
                 <div class="technology-name">HTML</div>
+            </div>
+
+            <div class="technology-item">
+                <div class="technology-image">
+                    <img src="{{ asset('img/css.png') }}" alt="">
+                </div>
+                <div class="technology-name">CSS</div>
             </div>
 
             <div class="technology-item">
@@ -269,20 +310,6 @@
                     <img src="{{ asset('img/aws.png') }}" alt="">
                 </div>
                 <div class="technology-name">Amazon Web Services</div>
-            </div>
-
-            <div class="technology-item">
-                <div class="technology-image">
-                    <img src="{{ asset('img/php.png') }}" alt="">
-                </div>
-                <div class="technology-name">PHP</div>
-            </div>
-
-            <div class="technology-item">
-                <div class="technology-image">
-                    <img src="{{ asset('img/vue.png') }}" alt="">
-                </div>
-                <div class="technology-name">Vue JS</div>
             </div>
 
         </div>

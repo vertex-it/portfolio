@@ -15,7 +15,6 @@ class ContactRequest extends FormRequest
             'phone' => ['nullable'],
             'subject' => ['required'],
             'message' => ['required'],
-            'g-recaptcha-response' => ['recaptcha'],
         ];
     }
 }

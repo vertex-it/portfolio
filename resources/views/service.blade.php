@@ -4,14 +4,12 @@
 
 @section('content')
     @include('components.subpage-main-section', [
-        'title' => 'Aspirano group of websites',
+        'title' => $service,
         'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.',
         'breadcrumbs' => [
-            'parent' => 'Projects',
-            'url' => route('projects'),
+            'parent' => 'Services',
+            'url' => route('services'),
         ],
-        'createdAt' => '07 dec 2021',
-        'minutesToRead' => '5 min read',
     ])
 
     <main class="py-12 lg:py-16 max-w-prose px-4 lg:px-0 mx-auto">

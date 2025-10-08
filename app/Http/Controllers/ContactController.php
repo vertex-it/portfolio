@@ -11,7 +11,7 @@ class ContactController extends Controller
 {
     public function __invoke(ContactRequest $request)
     {
-        Mail::to('info@vertex-it.com')->send(new ContactUs($request->validated()));
+        Mail::to('office@vertex-it.com')->send(new ContactUs($request->validated()));
 
         Contact::create($request->validated());
 

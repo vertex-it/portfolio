@@ -14,7 +14,7 @@
         <div class="mb-10 lg:mb-0">
             <h5 class="mb-4 lg:mb-8 text-sm font-semibold text-gray-400 tracking-wider uppercase">Contact Info</h5>
             <ul class="footer-group">
-                <li class="footer-item">info@vertex-it.com</li>
+                <li class="footer-item">office@vertex-it.com</li>
                 <li class="footer-item">Ulica Uroša Predića 14</li>
                 <li class="footer-item">Bijeljina</li>
             </ul>

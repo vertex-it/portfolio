@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navigation-item, .button-
         @apply text-gray-500 mt-5 sm:mt-6 md:mt-7 text-sm md:text-base leading-6 md:leading-7;
     }
     .project-button {
-        @apply bg-white text-xs md:text-sm font-medium text-red-500 border-2 border-red-500 rounded py-2 px-10 transition-colors duration-200 hover:bg-red-100;
+        @apply bg-transparent text-xs md:text-sm font-medium text-red-500 border-2 border-red-500 rounded py-2 px-10 transition-colors duration-200 hover:bg-red-100;
     }
 
     .landing-hero-slogan {

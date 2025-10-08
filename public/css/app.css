@@ -1097,7 +1097,7 @@ video {
   .technology-stack-grid{
     margin-left: -2.5rem;
     margin-right: -2.5rem;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 .technology-item{
@@ -1202,8 +1202,7 @@ video {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: transparent;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2.5rem;
@@ -1352,6 +1351,9 @@ video {
 .relative{
   position: relative;
 }
+.sticky{
+  position: sticky;
+}
 .inset-0{
   inset: 0px;
 }
@@ -1385,6 +1387,9 @@ video {
 }
 .top-full{
   top: 100%;
+}
+.top-5{
+  top: 1.25rem;
 }
 .z-0{
   z-index: 0;
@@ -1485,6 +1490,9 @@ video {
 }
 .block{
   display: block;
+}
+.inline-block{
+  display: inline-block;
 }
 .flex{
   display: flex;
@@ -1905,6 +1913,9 @@ video {
 }
 .pt-8{
   padding-top: 2rem;
+}
+.pt-10{
+  padding-top: 2.5rem;
 }
 .text-center{
   text-align: center;
@@ -2649,6 +2660,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navigation-item, .button-
     padding-top: 5rem;
   }
 
+  .lg\:pt-16{
+    padding-top: 4rem;
+  }
+
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2722,3 +2737,4 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navigation-item, .button-
     text-align: center;
   }
 }
+

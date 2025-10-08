@@ -7,11 +7,7 @@
         <div class="flex flex-col justify-between h-full app-container">
             @include('layouts.navigation')
             <section class="flex flex-wrap justify-between mt-24 mb-56">
-                <div
-                    class="w-full lg:w-1/2 max-w-2xl lg:max-w-full mx-auto order-2 lg:order-1 flex flex-col justify-center lg:items-start lg:pr-10"
-                    data-aos="fade-down"
-                    data-aos-duration="1300"
-                >
+                <div class="w-full lg:w-1/2 max-w-2xl lg:max-w-full mx-auto order-2 lg:order-1 flex flex-col justify-center lg:items-start lg:pr-10">
                     <h1 class="landing-hero-slogan">
                         Full-cycle web <span class="text-red-500 h1">development company</span>
                     </h1>
@@ -28,8 +24,6 @@
                         class="w-2/3 lg:w-full mx-auto max-w-72 lg:max-w-full max-h-72 lg:max-h-80"
                         alt="hero"
                         src="{{ asset('img/hero.svg') }}"
-                        data-aos="fade-left"
-                        data-aos-duration="1300"
                     >
                 </div>
             </section>
@@ -99,8 +93,6 @@
         <div class="app-container">
             <section
                 class="py-12 lg:py-20"
-                data-aos="fade-left"
-                data-aos-duration="1200"
             >
                 <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
                     <div class="flex flex-col justify-center">
@@ -207,8 +199,6 @@
             </section>
             <section
                 class="my-6 lg:my-20"
-                data-aos="fade-down"
-                data-aos-duration="1200"
             >
                 <div class="mb-6 lg:mb-24 max-w-3xl mx-auto">
                     <p class="landing-section-title-info text-center">Technology</p>
@@ -218,11 +208,9 @@
                     </p>
                 </div>
                 <div class="main-technology-grid">
-                    <a href="laravel.html">
+                    <a href="{{ route('service', 'laravel') }}">
                         <div
                             class="main-technology-card"
-                            data-aos="zoom-out"
-                            data-aos-duration="1000"
                         >
                             <img src="{{ asset('img/laravel.png') }}" class="mx-auto h-24 md:h-20" alt="">
                             <div class="main-technology-name">Laravel</div>
@@ -231,12 +219,9 @@
                             </p>
                         </div>
                     </a>
-                    <a href="laravel.html">
+                    <a href="{{ route('service', 'react') }}">
                         <div
                             class="main-technology-card"
-                            data-aos="zoom-out"
-                            data-aos-duration="1000"
-                            data-aos-delay="300"
                         >
                             <img src="{{ asset('img/react.png') }}" class="mx-auto h-24 md:h-20" alt="">
                             <div class="main-technology-name">React</div>
@@ -245,12 +230,9 @@
                             </p>
                         </div>
                     </a>
-                    <a href="laravel.html">
+                    <a href="{{ route('service', 'docker') }}">
                         <div
                             class="main-technology-card"
-                            data-aos="zoom-out"
-                            data-aos-duration="1000"
-                            data-aos-delay="600"
                         >
                             <img src="{{ asset('img/docker.png') }}" class="mx-auto h-24 md:h-20" alt="">
                             <div class="main-technology-name">Docker</div>
@@ -263,8 +245,6 @@
             </section>
             <section
                 class="my-10 lg:my-32"
-                data-aos="fade-right"
-                data-aos-duration="1200"
             >
                 <div class="grid gap-6 row-gap-10 lg:grid-cols-2">
                     <div class="lg:py-6 lg:pr-16">
@@ -433,7 +413,6 @@
                         src="https://i.imgur.com/rk2qMPs.png"
                         alt=""
                     >
-                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Ordinacije.me</h6>-->
                 </div>
                 <div class="cursor-pointer hover:opacity-50">
                     <img
@@ -441,7 +420,6 @@
                         src="https://i.imgur.com/f1O2nmj.png"
                         alt=""
                     >
-                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Apoteke.me</h6>-->
                 </div>
                 <div class="cursor-pointer hover:opacity-50">
                     <img
@@ -449,8 +427,36 @@
                         src="https://i.imgur.com/w4rCSLo.png"
                         alt=""
                     >
-                    <!--                            <h6 class="text-center mt-6 tracking-wider text-sm text-gray-900 uppercase">Aspirano</h6>-->
                 </div>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://i.imgur.com/w4rCSLo.png"
+                        alt=""
+                    >
+                </div>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://i.imgur.com/w4rCSLo.png"
+                        alt=""
+                    >
+                </div>
+                <div class="cursor-pointer hover:opacity-50">
+                    <img
+                        class="shadow-md rounded-xl w-full"
+                        src="https://i.imgur.com/w4rCSLo.png"
+                        alt=""
+                    >
+                </div>
+            </div>
+            <div class="pt-10 lg:pt-16 text-center">
+                <a
+                    href="{{ route('projects') }}"
+                    class="project-button inline-block"
+                >
+                    All Our Projects
+                </a>
             </div>
         </div>
     </section>
